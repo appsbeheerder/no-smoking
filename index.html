@@ -166,19 +166,24 @@
   /* ===== TEMPERATUUR SCHAAL ===== */
   .temp-scale{
     position:relative;
-    margin:40px 0 20px;
+    margin:40px auto 20px;
     padding:0 10px;
+    max-width:560px;
   }
   .temp-bar{
     position:relative;
     height:46px;
     border-radius:23px;
     background:linear-gradient(90deg,
-      #4fc3f7 0%, #4fc3f7 65%,
-      #7fd99a 65%, #7fd99a 80%,
-      #ffd54f 80%, #ffd54f 90%,
-      var(--red) 90%, var(--red) 100%);
+      #4fc3f7 0%, #4fc3f7 53.33%,
+      #7fd99a 53.33%, #7fd99a 73.33%,
+      #ffd54f 73.33%, #ffd54f 86.67%,
+      var(--red) 86.67%, var(--red) 100%);
     box-shadow:inset 0 2px 6px rgba(0,0,0,0.15);
+  }
+  @media (max-width:600px){
+    .temp-scale{ padding:0 26px; }
+    .temp-marker{ font-size:0.7rem; }
   }
   .temp-marker{
     position:absolute;
@@ -485,12 +490,11 @@
 
     <div class="temp-scale">
       <div class="temp-bar">
-        <div class="temp-marker" style="left:65%;">180°C<div class="dot"></div></div>
-        <div class="temp-marker" style="left:80%;">210°C<div class="dot"></div></div>
-        <div class="temp-marker" style="left:90%;">230°C+<div class="dot"></div></div>
+        <div class="temp-marker" style="left:53.33%;">180°C<div class="dot"></div></div>
+        <div class="temp-marker" style="left:73.33%;">210°C<div class="dot"></div></div>
+        <div class="temp-marker" style="left:86.67%;">230°C+<div class="dot"></div></div>
       </div>
       <div class="temp-labels">
-        <span>50°C</span>
         <span>100°C</span>
         <span>150°C</span>
         <span>200°C</span>
