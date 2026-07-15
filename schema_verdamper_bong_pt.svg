@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" font-family="Arial, sans-serif">
+  <rect width="900" height="1200" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a1a1a">Esquema: resistência de aquecimento → vaporização → filtragem por água (bong)</text>
+
+  <!-- ===================== BLOCK 1: RESISTÊNCIA ===================== -->
+  <rect x="60" y="70" width="200" height="60" rx="10" fill="#fde8d8" stroke="#c96a1a" stroke-width="2"/>
+  <text x="160" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#8a4b12">RESISTÊNCIA</text>
+
+  <!-- Air in arrow -->
+  <line x1="450" y1="80" x2="450" y2="140" stroke="#1a5fb4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="115" font-size="15" fill="#1a5fb4">ar 21°C (entrada)</text>
+
+  <!-- Heater tube -->
+  <rect x="400" y="140" width="100" height="230" rx="10" fill="#fff3e6" stroke="#333" stroke-width="2"/>
+  <!-- coil zigzag -->
+  <path d="M 415 155 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30"
+        fill="none" stroke="#c96a1a" stroke-width="4"/>
+  <path d="M 485 155 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30"
+        fill="none" stroke="#c96a1a" stroke-width="4"/>
+  <text x="620" y="260" font-size="15" fill="#8a4b12">resistência em espiral</text>
+  <text x="620" y="285" font-size="15" fill="#8a4b12">alimentada a 230 V</text>
+  <line x1="600" y1="260" x2="480" y2="230" stroke="#8a4b12" stroke-width="1.5"/>
+
+  <!-- 230V symbol -->
+  <line x1="600" y1="300" x2="600" y2="340" stroke="#333" stroke-width="2"/>
+  <line x1="580" y1="340" x2="620" y2="340" stroke="#333" stroke-width="3"/>
+  <line x1="587" y1="348" x2="613" y2="348" stroke="#333" stroke-width="2"/>
+  <line x1="593" y1="355" x2="607" y2="355" stroke="#333" stroke-width="1.5"/>
+  <text x="630" y="345" font-size="14" fill="#333">terra / alimentação 230 V</text>
+
+  <!-- Air out arrow -->
+  <line x1="450" y1="370" x2="450" y2="430" stroke="#c1272d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="410" font-size="15" fill="#c1272d">ar aquecido 220°C</text>
+
+  <!-- ===================== BLOCK 2: CÂMARA COM MATERIAL ===================== -->
+  <rect x="60" y="450" width="230" height="60" rx="10" fill="#e3f3e0" stroke="#2e7d32" stroke-width="2"/>
+  <text x="175" y="480" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b5e20">CÂMARA COM MATERIAL</text>
+
+  <!-- cup -->
+  <path d="M 405 440 L 495 440 L 480 520 L 420 520 Z" fill="#f4fff2" stroke="#2e7d32" stroke-width="2"/>
+  <line x1="410" y1="470" x2="490" y2="470" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="500" y="470" font-size="14" fill="#2e7d32">material a vaporizar</text>
+
+  <!-- vapor out arrow -->
+  <line x1="450" y1="520" x2="450" y2="580" stroke="#c1272d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="560" font-size="15" fill="#c1272d">vapor 220°C</text>
+
+  <!-- ===================== BLOCK 3: BONG / FILTRO DE ÁGUA ===================== -->
+  <rect x="60" y="610" width="180" height="60" rx="10" fill="#e0eefd" stroke="#1a5fb4" stroke-width="2"/>
+  <text x="150" y="640" text-anchor="middle" font-size="16" font-weight="bold" fill="#0b3d78">BONG</text>
+
+  <!-- Erlenmeyer flask -->
+  <path d="M 400 600 L 400 850 L 340 1050 L 560 1050 L 500 850 L 500 600 Z"
+        fill="#eaf4ff" stroke="#1a5fb4" stroke-width="2"/>
+  <!-- water level -->
+  <path d="M 355 990 L 545 990 L 500 850 L 400 850 Z" fill="#a9d4ff" stroke="none"/>
+
+  <!-- inner dip tube -->
+  <rect x="425" y="590" width="14" height="440" fill="#ffffff" stroke="#1a5fb4" stroke-width="2"/>
+  <line x1="432" y1="620" x2="432" y2="1010" stroke="#1a5fb4" stroke-width="2" stroke-dasharray="2,4" marker-end="url(#arrowblue)"/>
+  <text x="560" y="700" font-size="14" fill="#0b3d78">tubo na água</text>
+  <line x1="558" y1="695" x2="440" y2="650" stroke="#0b3d78" stroke-width="1"/>
+
+  <text x="560" y="820" font-size="14" fill="#0b3d78">o vapor borbulha na água</text>
+  <line x1="558" y1="815" x2="440" y2="900" stroke="#0b3d78" stroke-width="1"/>
+
+  <!-- side arm to hose -->
+  <path d="M 500 950 L 600 920" stroke="#1a5fb4" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <line x1="600" y1="920" x2="700" y2="890" stroke="#1a5fb4" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="710" y="885" font-size="15" fill="#1a5fb4">mangueira → aspirar (inalação)</text>
+
+  <text x="600" y="960" font-size="14" fill="#0b3d78">vapor: filtrado,</text>
+  <text x="600" y="980" font-size="14" fill="#0b3d78">arrefecido, ligeiramente humidificado</text>
+
+  <!-- water fill arrow -->
+  <line x1="230" y1="1030" x2="330" y2="1010" stroke="#1a5fb4" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="130" y="1050" font-size="15" fill="#1a5fb4">água</text>
+
+  <!-- Arrow marker defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6" fill="none" stroke="#c1272d" stroke-width="1.5"/>
+    </marker>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6" fill="none" stroke="#1a5fb4" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <!-- Footer legend -->
+  <rect x="60" y="1090" width="780" height="90" rx="8" fill="#f5f5f5" stroke="#999" stroke-width="1"/>
+  <text x="80" y="1115" font-size="14" fill="#333" font-weight="bold">Princípio de funcionamento:</text>
+  <text x="80" y="1135" font-size="13" fill="#333">1) O ar a 21°C é aquecido pela resistência em espiral (230V) até cerca de 220°C.</text>
+  <text x="80" y="1153" font-size="13" fill="#333">2) O ar quente atravessa a câmara com o material, que assim vaporiza (vapor 220°C).</text>
+  <text x="80" y="1171" font-size="13" fill="#333">3) O vapor é conduzido por um tubo debaixo de água até ao bong: filtrado, arrefecido e humidificado, depois aspirado por uma mangueira.</text>
+</svg>
