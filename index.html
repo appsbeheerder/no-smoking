@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verdampen i.p.v. Roken 🌿 Alles over Vaporizers</title>
+<title data-i18n-title="meta.title">Verdampen i.p.v. Roken 🌿 Alles over Vaporizers</title>
 <style>
   :root{
     --green-dark:#1f4d2c;
@@ -70,6 +70,39 @@
     border-radius:50px;
     font-size:0.9rem;
     backdrop-filter:blur(4px);
+  }
+
+  /* ===== LANGUAGE SWITCHER ===== */
+  .lang-switcher{
+    position:absolute;
+    top:16px;
+    right:16px;
+    z-index:5;
+  }
+  .lang-switcher select{
+    appearance:none;
+    -webkit-appearance:none;
+    background:rgba(255,255,255,0.18);
+    border:1px solid rgba(255,255,255,0.4);
+    color:#fff;
+    padding:8px 32px 8px 14px;
+    border-radius:50px;
+    font-size:0.85rem;
+    font-weight:600;
+    backdrop-filter:blur(4px);
+    cursor:pointer;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    background-size:14px;
+  }
+  .lang-switcher select:focus{ outline:2px solid #fff; }
+  .lang-switcher select option{
+    color:#1c2b20;
+    background:#fff;
+  }
+  @media (max-width:600px){
+    .lang-switcher{ position:static; display:flex; justify-content:center; margin-bottom:16px; }
   }
 
   /* ===== NAV WAVE ===== */
@@ -385,19 +418,29 @@
 <body>
 
 <header>
-  <h1>🌿 Verdampen in plaats van Roken</h1>
-  <p class="subtitle">Ontdek hoe een verdamper (vaporizer) de werkzame stoffen uit cannabis vrijmaakt zónder verbranding — lekkerder, gezonder en veel efficiënter.</p>
+  <div class="lang-switcher">
+    <select id="langSelect" aria-label="Taal / Language / Sprache / Langue / Idioma">
+      <option value="nl">🇳🇱 Nederlands</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+  </div>
+
+  <h1 data-i18n="header.h1">🌿 Verdampen in plaats van Roken</h1>
+  <p class="subtitle" data-i18n="header.subtitle">Ontdek hoe een verdamper (vaporizer) de werkzame stoffen uit cannabis vrijmaakt zónder verbranding — lekkerder, gezonder en veel efficiënter.</p>
   <div class="badges">
-    <span class="badge">🚭 Geen verbranding</span>
-    <span class="badge">🌡️ Nauwkeurige temperatuur</span>
-    <span class="badge">💚 Geen schadelijke stoffen</span>
-    <span class="badge">💰 Veel zuiniger</span>
+    <span class="badge" data-i18n="header.badge1">🚭 Geen verbranding</span>
+    <span class="badge" data-i18n="header.badge2">🌡️ Nauwkeurige temperatuur</span>
+    <span class="badge" data-i18n="header.badge3">💚 Geen schadelijke stoffen</span>
+    <span class="badge" data-i18n="header.badge4">💰 Veel zuiniger</span>
   </div>
   <div class="toc">
-    <a class="tocbtn" href="#temperaturen">🌡️ Temperaturen</a>
-    <a class="tocbtn" href="#efficientie">📊 Efficiëntie</a>
-    <a class="tocbtn" href="#schema">⚙️ Werking</a>
-    <a class="tocbtn" href="#voordelen">✨ Voordelen</a>
+    <a class="tocbtn" href="#temperaturen" data-i18n="header.toc1">🌡️ Temperaturen</a>
+    <a class="tocbtn" href="#efficientie" data-i18n="header.toc2">📊 Efficiëntie</a>
+    <a class="tocbtn" href="#schema" data-i18n="header.toc3">⚙️ Werking</a>
+    <a class="tocbtn" href="#voordelen" data-i18n="header.toc4">✨ Voordelen</a>
   </div>
 </header>
 
@@ -409,33 +452,33 @@
 
   <!-- INTRO -->
   <section id="intro">
-    <p class="lead">Wat is het verschil tussen roken en verdampen?</p>
-    <p>Bij <strong>roken</strong> steek je plantmateriaal in brand: dat gebeurt bij temperaturen van <strong>boven de 230 °C</strong>. Daarbij verbrandt niet alleen de werkzame stof, maar ook de plantaardige "drager" eromheen — met rook, teer en verbrandingsstoffen als gevolg.</p>
-    <p>Bij <strong>verdampen</strong> verhit je het plantmateriaal veel voorzichtiger. THC en CBD gaan al bij een relatief lage temperatuur over van vaste/vloeibare vorm naar damp. Zo adem je alleen de <em>werkzame stof</em> in — de rest van het plantmateriaal ("de verpakking") blijft gewoon liggen, verkleurd maar niet verkoold.</p>
+    <p class="lead" data-i18n="intro.lead">Wat is het verschil tussen roken en verdampen?</p>
+    <p data-i18n="intro.p1">Bij <strong>roken</strong> steek je plantmateriaal in brand: dat gebeurt bij temperaturen van <strong>boven de 230 °C</strong>. Daarbij verbrandt niet alleen de werkzame stof, maar ook de plantaardige “drager” eromheen — met rook, teer en verbrandingsstoffen als gevolg.</p>
+    <p data-i18n="intro.p2">Bij <strong>verdampen</strong> verhit je het plantmateriaal veel voorzichtiger. THC en CBD gaan al bij een relatief lage temperatuur over van vaste/vloeibare vorm naar damp. Zo adem je alleen de <em>werkzame stof</em> in — de rest van het plantmateriaal (“de verpakking”) blijft gewoon liggen, verkleurd maar niet verkoold.</p>
 
     <div class="intro-grid">
       <div class="intro-card">
         <span class="emoji">🔥</span>
-        <h3>Roken</h3>
-        <p>Verbranding boven 230 °C. Plantmateriaal + werkzame stof gaan samen op in rook.</p>
+        <h3 data-i18n="intro.card1.title">Roken</h3>
+        <p data-i18n="intro.card1.text">Verbranding boven 230 °C. Plantmateriaal + werkzame stof gaan samen op in rook.</p>
       </div>
       <div class="intro-card">
         <span class="emoji">💨</span>
-        <h3>Verdampen</h3>
-        <p>Verhitting tussen 180–220 °C. Alleen de werkzame stof verdampt, de drager blijft over.</p>
+        <h3 data-i18n="intro.card2.title">Verdampen</h3>
+        <p data-i18n="intro.card2.text">Verhitting tussen 180–220 °C. Alleen de werkzame stof verdampt, de drager blijft over.</p>
       </div>
       <div class="intro-card">
         <span class="emoji">🌱</span>
-        <h3>Restproduct</h3>
-        <p>Na het verdampen hou je licht gebruinde kruiden over — geen as, geen verbrande rook.</p>
+        <h3 data-i18n="intro.card3.title">Restproduct</h3>
+        <p data-i18n="intro.card3.text">Na het verdampen hou je licht gebruinde kruiden over — geen as, geen verbrande rook.</p>
       </div>
     </div>
   </section>
 
   <!-- TEMPERATUREN -->
   <section id="temperaturen">
-    <h2><span class="icon">🌡️</span> Bij welke temperatuur gebeurt wat?</h2>
-    <p>Elke werkzame stof in cannabis heeft een eigen "kookpunt" — het punt waarop hij verdampt in plaats van vast of vloeibaar te blijven. Blijf je onder deze temperaturen, dan gebeurt er niets; kom je er te ver bovenuit, dan verbrandt het plantmateriaal.</p>
+    <h2><span class="icon">🌡️</span> <span data-i18n="temp.h2">Bij welke temperatuur gebeurt wat?</span></h2>
+    <p data-i18n="temp.p">Elke werkzame stof in cannabis heeft een eigen “kookpunt” — het punt waarop hij verdampt in plaats van vast of vloeibaar te blijven. Blijf je onder deze temperaturen, dan gebeurt er niets; kom je er te ver bovenuit, dan verbrandt het plantmateriaal.</p>
 
     <div class="temp-scale">
       <div class="temp-bar">
@@ -453,42 +496,42 @@
     </div>
 
     <div class="temp-legend">
-      <span><span class="swatch" style="background:#7fd99a;"></span> ±180 °C — THC verdampt</span>
-      <span><span class="swatch" style="background:#ffd54f;"></span> ±210 °C — CBD verdampt</span>
-      <span><span class="swatch" style="background:var(--red);"></span> &gt;230 °C — plantmateriaal verbrandt</span>
+      <span><span class="swatch" style="background:#7fd99a;"></span> <span data-i18n="temp.legend1">±180 °C — THC verdampt</span></span>
+      <span><span class="swatch" style="background:#ffd54f;"></span> <span data-i18n="temp.legend2">±210 °C — CBD verdampt</span></span>
+      <span><span class="swatch" style="background:var(--red);"></span> <span data-i18n="temp.legend3">&gt;230 °C — plantmateriaal verbrandt</span></span>
     </div>
 
     <div class="callout">
       <span class="emoji">⚠️</span>
-      <p><strong>Boven de 230 °C</strong> begint het plantmateriaal daadwerkelijk te verbranden. Dan ontstaan dezelfde schadelijke verbrandingsstoffen als bij roken. Een goede verdamper houdt de temperatuur daarom nauwkeurig ónder deze grens.</p>
+      <p data-i18n="temp.callout"><strong>Boven de 230 °C</strong> begint het plantmateriaal daadwerkelijk te verbranden. Dan ontstaan dezelfde schadelijke verbrandingsstoffen als bij roken. Een goede verdamper houdt de temperatuur daarom nauwkeurig ónder deze grens.</p>
     </div>
   </section>
 
   <!-- EFFICIENTIE -->
   <section id="efficientie">
-    <h2><span class="icon">📊</span> Efficiëntie: roken vs. verdampen</h2>
-    <p>Bij het roken van cannabis gaat het grootste deel van de werkzame stof simpelweg verloren aan de omgevingslucht en aan verbranding. Bij verdampen is die verhouding vrijwel omgekeerd.</p>
+    <h2><span class="icon">📊</span> <span data-i18n="eff.h2">Efficiëntie: roken vs. verdampen</span></h2>
+    <p data-i18n="eff.p">Bij het roken van cannabis gaat het grootste deel van de werkzame stof simpelweg verloren aan de omgevingslucht en aan verbranding. Bij verdampen is die verhouding vrijwel omgekeerd.</p>
 
     <div class="efficiency-wrap">
       <div class="eff-card">
-        <h3>🔥 Roken</h3>
+        <h3 data-i18n="eff.card1.title">🔥 Roken</h3>
         <div class="eff-bar-row">
-          <div class="eff-bar-label">Ingeademd</div>
+          <div class="eff-bar-label" data-i18n="eff.label.inhaled">Ingeademd</div>
           <div class="eff-bar-track"><div class="eff-bar-fill fill-bad" style="width:20%;">20%</div></div>
         </div>
         <div class="eff-bar-row">
-          <div class="eff-bar-label">Verloren / lucht</div>
+          <div class="eff-bar-label" data-i18n="eff.label.lost">Verloren / lucht</div>
           <div class="eff-bar-track"><div class="eff-bar-fill fill-bad" style="width:80%;">80%</div></div>
         </div>
       </div>
       <div class="eff-card">
-        <h3>💨 Verdampen</h3>
+        <h3 data-i18n="eff.card2.title">💨 Verdampen</h3>
         <div class="eff-bar-row">
-          <div class="eff-bar-label">Ingeademd</div>
+          <div class="eff-bar-label" data-i18n="eff.label.inhaled">Ingeademd</div>
           <div class="eff-bar-track"><div class="eff-bar-fill fill-good" style="width:80%;">80%</div></div>
         </div>
         <div class="eff-bar-row">
-          <div class="eff-bar-label">Verloren / lucht</div>
+          <div class="eff-bar-label" data-i18n="eff.label.lost">Verloren / lucht</div>
           <div class="eff-bar-track"><div class="eff-bar-fill fill-good" style="width:20%;">20%</div></div>
         </div>
       </div>
@@ -496,70 +539,94 @@
 
     <table class="compare-table">
       <thead>
-        <tr><th>Aspect</th><th>Roken</th><th>Verdampen</th></tr>
+        <tr>
+          <th data-i18n="eff.table.aspect">Aspect</th>
+          <th data-i18n="eff.table.smoking">Roken</th>
+          <th data-i18n="eff.table.vaping">Verdampen</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td>Verbruik van kruid</td><td class="no">Veel nodig</td><td class="ok">Veel minder nodig</td></tr>
-        <tr><td>Kosten</td><td class="no">Hoger op termijn</td><td class="ok">Aanzienlijk goedkoper</td></tr>
-        <tr><td>Smaak</td><td class="no">Verbrande / rokerige smaak</td><td class="ok">Volle, zuivere smaak</td></tr>
-        <tr><td>Schadelijke stoffen</td><td class="no">Teer, koolmonoxide, kankerverwekkende stoffen</td><td class="ok">Vrijwel geen</td></tr>
-        <tr><td>Geur</td><td class="no">Sterke, blijvende rooklucht</td><td class="ok">Lichte, snel vervliegende geur</td></tr>
+        <tr>
+          <td data-i18n="eff.row1.label">Verbruik van kruid</td>
+          <td class="no" data-i18n="eff.row1.smoking">Veel nodig</td>
+          <td class="ok" data-i18n="eff.row1.vaping">Veel minder nodig</td>
+        </tr>
+        <tr>
+          <td data-i18n="eff.row2.label">Kosten</td>
+          <td class="no" data-i18n="eff.row2.smoking">Hoger op termijn</td>
+          <td class="ok" data-i18n="eff.row2.vaping">Aanzienlijk goedkoper</td>
+        </tr>
+        <tr>
+          <td data-i18n="eff.row3.label">Smaak</td>
+          <td class="no" data-i18n="eff.row3.smoking">Verbrande / rokerige smaak</td>
+          <td class="ok" data-i18n="eff.row3.vaping">Volle, zuivere smaak</td>
+        </tr>
+        <tr>
+          <td data-i18n="eff.row4.label">Schadelijke stoffen</td>
+          <td class="no" data-i18n="eff.row4.smoking">Teer, koolmonoxide, kankerverwekkende stoffen</td>
+          <td class="ok" data-i18n="eff.row4.vaping">Vrijwel geen</td>
+        </tr>
+        <tr>
+          <td data-i18n="eff.row5.label">Geur</td>
+          <td class="no" data-i18n="eff.row5.smoking">Sterke, blijvende rooklucht</td>
+          <td class="ok" data-i18n="eff.row5.vaping">Lichte, snel vervliegende geur</td>
+        </tr>
       </tbody>
     </table>
   </section>
 
   <!-- SCHEMA WERKING -->
   <section id="schema">
-    <h2><span class="icon">⚙️</span> Zo werkt een verdamper</h2>
-    <p>Een verdamper verhit lucht (of het kruid direct) tot een nauwkeurig ingestelde temperatuur. Deze warme lucht stroomt langs of door het plantmateriaal, waardoor alleen de werkzame stoffen verdampen — zonder dat het materiaal zelf in brand vliegt.</p>
+    <h2><span class="icon">⚙️</span> <span data-i18n="schema.h2">Zo werkt een verdamper</span></h2>
+    <p data-i18n="schema.p">Een verdamper verhit lucht (of het kruid direct) tot een nauwkeurig ingestelde temperatuur. Deze warme lucht stroomt langs of door het plantmateriaal, waardoor alleen de werkzame stoffen verdampen — zonder dat het materiaal zelf in brand vliegt.</p>
 
     <div class="schema-wrap">
       <figure class="schema-photo">
-        <img src="schema_verdamper_bong.svg" alt="Schema van heater, verdamping en waterfiltratie (bong)" loading="lazy">
-        <figcaption>Schema: heater → verdamping → waterfiltratie (bong)</figcaption>
+        <img id="schemaImg" src="schema_verdamper_bong_nl.svg" data-i18n-alt="schema.alt" alt="Schema van heater, verdamping en waterfiltratie (bong)" loading="lazy">
+        <figcaption data-i18n="schema.caption">Schema: heater → verdamping → waterfiltratie (bong)</figcaption>
       </figure>
 
       <div class="diagram">
         <div class="flow-step">
           <div class="flow-num">1</div>
           <div>
-            <h4>Heater</h4>
-            <p>Lucht van kamertemperatuur (~21 °C) wordt via een verwarmingsspiraal verhit tot circa 220 °C.</p>
+            <h4 data-i18n="schema.step1.title">Heater</h4>
+            <p data-i18n="schema.step1.text">Lucht van kamertemperatuur (~21 °C) wordt via een verwarmingsspiraal verhit tot circa 220 °C.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">2</div>
           <div>
-            <h4>Kopje met materiaal</h4>
-            <p>De hete lucht stroomt door het kopje met fijngemalen plantmateriaal (THC/CBD), dat hierdoor verdampt.</p>
+            <h4 data-i18n="schema.step2.title">Kopje met materiaal</h4>
+            <p data-i18n="schema.step2.text">De hete lucht stroomt door het kopje met fijngemalen plantmateriaal (THC/CBD), dat hierdoor verdampt.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">3</div>
           <div>
-            <h4>Damp naar de bong</h4>
-            <p>De damp van circa 220 °C wordt via een buis onder water in de bong geleid.</p>
+            <h4 data-i18n="schema.step3.title">Damp naar de bong</h4>
+            <p data-i18n="schema.step3.text">De damp van circa 220 °C wordt via een buis onder water in de bong geleid.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">4</div>
           <div>
-            <h4>Waterfiltratie</h4>
-            <p>De damp borrelt door het water: dit filtert, koelt en bevochtigt de damp voordat je hem inademt.</p>
+            <h4 data-i18n="schema.step4.title">Waterfiltratie</h4>
+            <p data-i18n="schema.step4.text">De damp borrelt door het water: dit filtert, koelt en bevochtigt de damp voordat je hem inademt.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">5</div>
           <div>
-            <h4>Slang / inhalatie</h4>
-            <p>Via de slang zuig je de gefilterde damp naar binnen.</p>
+            <h4 data-i18n="schema.step5.title">Slang / inhalatie</h4>
+            <p data-i18n="schema.step5.text">Via de slang zuig je de gefilterde damp naar binnen.</p>
           </div>
         </div>
         <div class="flow-step">
           <div class="flow-num">6</div>
           <div>
-            <h4>Restproduct</h4>
-            <p>Het overgebleven plantmateriaal (de "drager") is licht gebruind, maar niet verbrand.</p>
+            <h4 data-i18n="schema.step6.title">Restproduct</h4>
+            <p data-i18n="schema.step6.text">Het overgebleven plantmateriaal (de “drager”) is licht gebruind, maar niet verbrand.</p>
           </div>
         </div>
       </div>
@@ -568,52 +635,511 @@
 
   <!-- VOORDELEN -->
   <section id="voordelen">
-    <h2><span class="icon">✨</span> Waarom verdampen zoveel beter is</h2>
+    <h2><span class="icon">✨</span> <span data-i18n="benefits.h2">Waarom verdampen zoveel beter is</span></h2>
     <div class="benefits-grid">
       <div class="benefit">
         <span class="emoji">💰</span>
-        <h3>Veel goedkoper</h3>
-        <p>Je hebt aanzienlijk minder kruid nodig voor hetzelfde effect.</p>
+        <h3 data-i18n="benefit1.title">Veel goedkoper</h3>
+        <p data-i18n="benefit1.text">Je hebt aanzienlijk minder kruid nodig voor hetzelfde effect.</p>
       </div>
       <div class="benefit">
         <span class="emoji">😋</span>
-        <h3>Lekkerder</h3>
-        <p>Volle, zuivere smaken in plaats van een verbrande rooksmaak.</p>
+        <h3 data-i18n="benefit2.title">Lekkerder</h3>
+        <p data-i18n="benefit2.text">Volle, zuivere smaken in plaats van een verbrande rooksmaak.</p>
       </div>
       <div class="benefit">
         <span class="emoji">💚</span>
-        <h3>Gezondheidswinst</h3>
-        <p>Geen verbrandingsproducten zoals teer, koolstofmonoxide of kankerverwekkende stoffen.</p>
+        <h3 data-i18n="benefit3.title">Gezondheidswinst</h3>
+        <p data-i18n="benefit3.text">Geen verbrandingsproducten zoals teer, koolstofmonoxide of kankerverwekkende stoffen.</p>
       </div>
       <div class="benefit">
         <span class="emoji">🚫🔥</span>
-        <h3>Geen verbranding</h3>
-        <p>Blijft onder de 230 °C, dus er is simpelweg geen vuur en geen rook.</p>
+        <h3 data-i18n="benefit4.title">Geen verbranding</h3>
+        <p data-i18n="benefit4.text">Blijft onder de 230 °C, dus er is simpelweg geen vuur en geen rook.</p>
       </div>
       <div class="benefit">
         <span class="emoji">🎯</span>
-        <h3>Nauwkeurig doseren</h3>
-        <p>Instelbare temperatuur = controle over welke stoffen vrijkomen.</p>
+        <h3 data-i18n="benefit5.title">Nauwkeurig doseren</h3>
+        <p data-i18n="benefit5.text">Instelbare temperatuur = controle over welke stoffen vrijkomen.</p>
       </div>
       <div class="benefit">
         <span class="emoji">🌬️</span>
-        <h3>Milde geur</h3>
-        <p>Damp vervliegt snel en blijft niet hangen zoals rooklucht.</p>
+        <h3 data-i18n="benefit6.title">Milde geur</h3>
+        <p data-i18n="benefit6.text">Damp vervliegt snel en blijft niet hangen zoals rooklucht.</p>
       </div>
     </div>
 
     <div class="callout">
       <span class="emoji">🌿</span>
-      <p>Kortom: verdampen haalt eruit wat je wílt (THC en CBD), en laat achter wat je niet nodig hebt — zonder de schadelijke bijproducten van verbranding.</p>
+      <p data-i18n="benefits.callout">Kortom: verdampen haalt eruit wat je wílt (THC en CBD), en laat achter wat je niet nodig hebt — zonder de schadelijke bijproducten van verbranding.</p>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <p>🌿 Informatieve pagina over verdampen van cannabis (THC/CBD) — gemaakt om de werking en voordelen van vaporizers helder uit te leggen.</p>
-  <p class="disclaimer">Deze pagina is uitsluitend informatief bedoeld. Genoemde temperaturen zijn richtwaarden; het gebruik van cannabisproducten is aan lokale wet- en regelgeving gebonden.</p>
+  <p data-i18n="footer.p1">🌿 Informatieve pagina over verdampen van cannabis (THC/CBD) — gemaakt om de werking en voordelen van vaporizers helder uit te leggen.</p>
+  <p class="disclaimer" data-i18n="footer.disclaimer">Deze pagina is uitsluitend informatief bedoeld. Genoemde temperaturen zijn richtwaarden; het gebruik van cannabisproducten is aan lokale wet- en regelgeving gebonden.</p>
 </footer>
+
+<script>
+(function(){
+  var translations = {
+    nl: {
+      "meta.title": "Verdampen i.p.v. Roken 🌿 Alles over Vaporizers",
+      "header.h1": "🌿 Verdampen in plaats van Roken",
+      "header.subtitle": "Ontdek hoe een verdamper (vaporizer) de werkzame stoffen uit cannabis vrijmaakt zónder verbranding — lekkerder, gezonder en veel efficiënter.",
+      "header.badge1": "🚭 Geen verbranding",
+      "header.badge2": "🌡️ Nauwkeurige temperatuur",
+      "header.badge3": "💚 Geen schadelijke stoffen",
+      "header.badge4": "💰 Veel zuiniger",
+      "header.toc1": "🌡️ Temperaturen",
+      "header.toc2": "📊 Efficiëntie",
+      "header.toc3": "⚙️ Werking",
+      "header.toc4": "✨ Voordelen",
+      "intro.lead": "Wat is het verschil tussen roken en verdampen?",
+      "intro.p1": "Bij <strong>roken</strong> steek je plantmateriaal in brand: dat gebeurt bij temperaturen van <strong>boven de 230 °C</strong>. Daarbij verbrandt niet alleen de werkzame stof, maar ook de plantaardige “drager” eromheen — met rook, teer en verbrandingsstoffen als gevolg.",
+      "intro.p2": "Bij <strong>verdampen</strong> verhit je het plantmateriaal veel voorzichtiger. THC en CBD gaan al bij een relatief lage temperatuur over van vaste/vloeibare vorm naar damp. Zo adem je alleen de <em>werkzame stof</em> in — de rest van het plantmateriaal (“de verpakking”) blijft gewoon liggen, verkleurd maar niet verkoold.",
+      "intro.card1.title": "Roken",
+      "intro.card1.text": "Verbranding boven 230 °C. Plantmateriaal + werkzame stof gaan samen op in rook.",
+      "intro.card2.title": "Verdampen",
+      "intro.card2.text": "Verhitting tussen 180–220 °C. Alleen de werkzame stof verdampt, de drager blijft over.",
+      "intro.card3.title": "Restproduct",
+      "intro.card3.text": "Na het verdampen hou je licht gebruinde kruiden over — geen as, geen verbrande rook.",
+      "temp.h2": "Bij welke temperatuur gebeurt wat?",
+      "temp.p": "Elke werkzame stof in cannabis heeft een eigen “kookpunt” — het punt waarop hij verdampt in plaats van vast of vloeibaar te blijven. Blijf je onder deze temperaturen, dan gebeurt er niets; kom je er te ver bovenuit, dan verbrandt het plantmateriaal.",
+      "temp.legend1": "±180 °C — THC verdampt",
+      "temp.legend2": "±210 °C — CBD verdampt",
+      "temp.legend3": ">230 °C — plantmateriaal verbrandt",
+      "temp.callout": "<strong>Boven de 230 °C</strong> begint het plantmateriaal daadwerkelijk te verbranden. Dan ontstaan dezelfde schadelijke verbrandingsstoffen als bij roken. Een goede verdamper houdt de temperatuur daarom nauwkeurig ónder deze grens.",
+      "eff.h2": "Efficiëntie: roken vs. verdampen",
+      "eff.p": "Bij het roken van cannabis gaat het grootste deel van de werkzame stof simpelweg verloren aan de omgevingslucht en aan verbranding. Bij verdampen is die verhouding vrijwel omgekeerd.",
+      "eff.card1.title": "🔥 Roken",
+      "eff.card2.title": "💨 Verdampen",
+      "eff.label.inhaled": "Ingeademd",
+      "eff.label.lost": "Verloren / lucht",
+      "eff.table.aspect": "Aspect",
+      "eff.table.smoking": "Roken",
+      "eff.table.vaping": "Verdampen",
+      "eff.row1.label": "Verbruik van kruid",
+      "eff.row1.smoking": "Veel nodig",
+      "eff.row1.vaping": "Veel minder nodig",
+      "eff.row2.label": "Kosten",
+      "eff.row2.smoking": "Hoger op termijn",
+      "eff.row2.vaping": "Aanzienlijk goedkoper",
+      "eff.row3.label": "Smaak",
+      "eff.row3.smoking": "Verbrande / rokerige smaak",
+      "eff.row3.vaping": "Volle, zuivere smaak",
+      "eff.row4.label": "Schadelijke stoffen",
+      "eff.row4.smoking": "Teer, koolmonoxide, kankerverwekkende stoffen",
+      "eff.row4.vaping": "Vrijwel geen",
+      "eff.row5.label": "Geur",
+      "eff.row5.smoking": "Sterke, blijvende rooklucht",
+      "eff.row5.vaping": "Lichte, snel vervliegende geur",
+      "schema.h2": "Zo werkt een verdamper",
+      "schema.p": "Een verdamper verhit lucht (of het kruid direct) tot een nauwkeurig ingestelde temperatuur. Deze warme lucht stroomt langs of door het plantmateriaal, waardoor alleen de werkzame stoffen verdampen — zonder dat het materiaal zelf in brand vliegt.",
+      "schema.caption": "Schema: heater → verdamping → waterfiltratie (bong)",
+      "schema.alt": "Schema van heater, verdamping en waterfiltratie (bong)",
+      "schema.step1.title": "Heater",
+      "schema.step1.text": "Lucht van kamertemperatuur (~21 °C) wordt via een verwarmingsspiraal verhit tot circa 220 °C.",
+      "schema.step2.title": "Kopje met materiaal",
+      "schema.step2.text": "De hete lucht stroomt door het kopje met fijngemalen plantmateriaal (THC/CBD), dat hierdoor verdampt.",
+      "schema.step3.title": "Damp naar de bong",
+      "schema.step3.text": "De damp van circa 220 °C wordt via een buis onder water in de bong geleid.",
+      "schema.step4.title": "Waterfiltratie",
+      "schema.step4.text": "De damp borrelt door het water: dit filtert, koelt en bevochtigt de damp voordat je hem inademt.",
+      "schema.step5.title": "Slang / inhalatie",
+      "schema.step5.text": "Via de slang zuig je de gefilterde damp naar binnen.",
+      "schema.step6.title": "Restproduct",
+      "schema.step6.text": "Het overgebleven plantmateriaal (de “drager”) is licht gebruind, maar niet verbrand.",
+      "benefits.h2": "Waarom verdampen zoveel beter is",
+      "benefit1.title": "Veel goedkoper",
+      "benefit1.text": "Je hebt aanzienlijk minder kruid nodig voor hetzelfde effect.",
+      "benefit2.title": "Lekkerder",
+      "benefit2.text": "Volle, zuivere smaken in plaats van een verbrande rooksmaak.",
+      "benefit3.title": "Gezondheidswinst",
+      "benefit3.text": "Geen verbrandingsproducten zoals teer, koolstofmonoxide of kankerverwekkende stoffen.",
+      "benefit4.title": "Geen verbranding",
+      "benefit4.text": "Blijft onder de 230 °C, dus er is simpelweg geen vuur en geen rook.",
+      "benefit5.title": "Nauwkeurig doseren",
+      "benefit5.text": "Instelbare temperatuur = controle over welke stoffen vrijkomen.",
+      "benefit6.title": "Milde geur",
+      "benefit6.text": "Damp vervliegt snel en blijft niet hangen zoals rooklucht.",
+      "benefits.callout": "Kortom: verdampen haalt eruit wat je wílt (THC en CBD), en laat achter wat je niet nodig hebt — zonder de schadelijke bijproducten van verbranding.",
+      "footer.p1": "🌿 Informatieve pagina over verdampen van cannabis (THC/CBD) — gemaakt om de werking en voordelen van vaporizers helder uit te leggen.",
+      "footer.disclaimer": "Deze pagina is uitsluitend informatief bedoeld. Genoemde temperaturen zijn richtwaarden; het gebruik van cannabisproducten is aan lokale wet- en regelgeving gebonden."
+    },
+    en: {
+      "meta.title": "Vaping Instead of Smoking 🌿 Everything About Vaporizers",
+      "header.h1": "🌿 Vaping Instead of Smoking",
+      "header.subtitle": "Discover how a vaporizer releases the active compounds in cannabis without combustion — tastier, healthier and far more efficient.",
+      "header.badge1": "🚭 No combustion",
+      "header.badge2": "🌡️ Precise temperature",
+      "header.badge3": "💚 No harmful substances",
+      "header.badge4": "💰 Much more economical",
+      "header.toc1": "🌡️ Temperatures",
+      "header.toc2": "📊 Efficiency",
+      "header.toc3": "⚙️ How it works",
+      "header.toc4": "✨ Benefits",
+      "intro.lead": "What's the difference between smoking and vaping?",
+      "intro.p1": "When you <strong>smoke</strong>, you set plant material on fire: that happens at temperatures <strong>above 230 °C</strong>. This burns not only the active compound but also the plant “carrier” around it — producing smoke, tar and combustion by-products.",
+      "intro.p2": "When you <strong>vape</strong>, you heat the plant material much more gently. THC and CBD turn from solid/liquid into vapor at a relatively low temperature. This way you only inhale the <em>active compound</em> — the rest of the plant material (the “packaging”) is simply left behind, discolored but not charred.",
+      "intro.card1.title": "Smoking",
+      "intro.card1.text": "Combustion above 230 °C. Plant material and active compound go up in smoke together.",
+      "intro.card2.title": "Vaping",
+      "intro.card2.text": "Heating between 180–220 °C. Only the active compound vaporizes, the carrier material remains.",
+      "intro.card3.title": "Leftover material",
+      "intro.card3.text": "After vaping you're left with lightly browned herb — no ash, no burnt smoke.",
+      "temp.h2": "At what temperature does what happen?",
+      "temp.p": "Every active compound in cannabis has its own “boiling point” — the point at which it vaporizes instead of staying solid or liquid. Stay below these temperatures and nothing happens; go too far above them and the plant material combusts.",
+      "temp.legend1": "±180 °C — THC vaporizes",
+      "temp.legend2": "±210 °C — CBD vaporizes",
+      "temp.legend3": ">230 °C — plant material combusts",
+      "temp.callout": "<strong>Above 230 °C</strong> the plant material actually starts to burn. That produces the same harmful combustion by-products as smoking. A good vaporizer therefore keeps the temperature precisely below this limit.",
+      "eff.h2": "Efficiency: smoking vs. vaping",
+      "eff.p": "When smoking cannabis, most of the active compound is simply lost to the surrounding air and to combustion. When vaping, that ratio is almost reversed.",
+      "eff.card1.title": "🔥 Smoking",
+      "eff.card2.title": "💨 Vaping",
+      "eff.label.inhaled": "Inhaled",
+      "eff.label.lost": "Lost / air",
+      "eff.table.aspect": "Aspect",
+      "eff.table.smoking": "Smoking",
+      "eff.table.vaping": "Vaping",
+      "eff.row1.label": "Herb consumption",
+      "eff.row1.smoking": "Needs a lot",
+      "eff.row1.vaping": "Needs far less",
+      "eff.row2.label": "Cost",
+      "eff.row2.smoking": "Higher over time",
+      "eff.row2.vaping": "Considerably cheaper",
+      "eff.row3.label": "Taste",
+      "eff.row3.smoking": "Burnt / smoky taste",
+      "eff.row3.vaping": "Full, pure taste",
+      "eff.row4.label": "Harmful substances",
+      "eff.row4.smoking": "Tar, carbon monoxide, carcinogens",
+      "eff.row4.vaping": "Virtually none",
+      "eff.row5.label": "Odor",
+      "eff.row5.smoking": "Strong, lingering smoke smell",
+      "eff.row5.vaping": "Light, quickly dissipating smell",
+      "schema.h2": "How a vaporizer works",
+      "schema.p": "A vaporizer heats air (or the herb directly) to a precisely set temperature. This warm air flows past or through the plant material, so that only the active compounds vaporize — without the material itself catching fire.",
+      "schema.caption": "Diagram: heater → vaporization → water filtration (bong)",
+      "schema.alt": "Diagram of heater, vaporization and water filtration (bong)",
+      "schema.step1.title": "Heater",
+      "schema.step1.text": "Air at room temperature (~21 °C) is heated by a heating coil to roughly 220 °C.",
+      "schema.step2.title": "Chamber with material",
+      "schema.step2.text": "The hot air flows through the chamber containing finely ground plant material (THC/CBD), which vaporizes as a result.",
+      "schema.step3.title": "Vapor to the bong",
+      "schema.step3.text": "The vapor, at around 220 °C, is guided through a tube under water into the bong.",
+      "schema.step4.title": "Water filtration",
+      "schema.step4.text": "The vapor bubbles through the water: this filters, cools and lightly humidifies it before you inhale it.",
+      "schema.step5.title": "Hose / inhalation",
+      "schema.step5.text": "You draw the filtered vapor in through the hose.",
+      "schema.step6.title": "Leftover material",
+      "schema.step6.text": "The remaining plant material (the “carrier”) is lightly browned but not burnt.",
+      "benefits.h2": "Why vaping is so much better",
+      "benefit1.title": "Much cheaper",
+      "benefit1.text": "You need considerably less herb for the same effect.",
+      "benefit2.title": "Tastier",
+      "benefit2.text": "Full, pure flavors instead of a burnt smoky taste.",
+      "benefit3.title": "Health benefits",
+      "benefit3.text": "No combustion products such as tar, carbon monoxide or carcinogens.",
+      "benefit4.title": "No combustion",
+      "benefit4.text": "Stays below 230 °C, so there's simply no fire and no smoke.",
+      "benefit5.title": "Precise dosing",
+      "benefit5.text": "Adjustable temperature = control over which compounds are released.",
+      "benefit6.title": "Mild odor",
+      "benefit6.text": "Vapor dissipates quickly and doesn't linger like smoke.",
+      "benefits.callout": "In short: vaping extracts what you want (THC and CBD), and leaves behind what you don't need — without the harmful by-products of combustion.",
+      "footer.p1": "🌿 An informational page about vaping cannabis (THC/CBD) — created to clearly explain how vaporizers work and their benefits.",
+      "footer.disclaimer": "This page is for informational purposes only. The temperatures mentioned are guideline values; the use of cannabis products is subject to local laws and regulations."
+    },
+    de: {
+      "meta.title": "Verdampfen statt Rauchen 🌿 Alles über Vaporizer",
+      "header.h1": "🌿 Verdampfen statt Rauchen",
+      "header.subtitle": "Entdecke, wie ein Verdampfer (Vaporizer) die Wirkstoffe aus Cannabis freisetzt, ohne zu verbrennen — schmackhafter, gesünder und deutlich effizienter.",
+      "header.badge1": "🚭 Keine Verbrennung",
+      "header.badge2": "🌡️ Präzise Temperatur",
+      "header.badge3": "💚 Keine Schadstoffe",
+      "header.badge4": "💰 Viel sparsamer",
+      "header.toc1": "🌡️ Temperaturen",
+      "header.toc2": "📊 Effizienz",
+      "header.toc3": "⚙️ Funktionsweise",
+      "header.toc4": "✨ Vorteile",
+      "intro.lead": "Was ist der Unterschied zwischen Rauchen und Verdampfen?",
+      "intro.p1": "Beim <strong>Rauchen</strong> zündest du Pflanzenmaterial an: Das geschieht bei Temperaturen von <strong>über 230 °C</strong>. Dabei verbrennt nicht nur der Wirkstoff, sondern auch der pflanzliche „Träger“ drumherum — mit Rauch, Teer und Verbrennungsstoffen als Folge.",
+      "intro.p2": "Beim <strong>Verdampfen</strong> erhitzt du das Pflanzenmaterial viel schonender. THC und CBD gehen schon bei relativ niedriger Temperatur von fest/flüssig in Dampfform über. So atmest du nur den <em>Wirkstoff</em> ein — der Rest des Pflanzenmaterials (die „Verpackung“) bleibt einfach liegen, verfärbt, aber nicht verkohlt.",
+      "intro.card1.title": "Rauchen",
+      "intro.card1.text": "Verbrennung über 230 °C. Pflanzenmaterial und Wirkstoff gehen gemeinsam in Rauch auf.",
+      "intro.card2.title": "Verdampfen",
+      "intro.card2.text": "Erhitzung zwischen 180–220 °C. Nur der Wirkstoff verdampft, der Träger bleibt übrig.",
+      "intro.card3.title": "Restprodukt",
+      "intro.card3.text": "Nach dem Verdampfen bleiben leicht gebräunte Kräuter übrig — keine Asche, kein verbrannter Rauch.",
+      "temp.h2": "Bei welcher Temperatur passiert was?",
+      "temp.p": "Jeder Wirkstoff in Cannabis hat seinen eigenen „Siedepunkt“ — den Punkt, an dem er verdampft, statt fest oder flüssig zu bleiben. Bleibst du unter diesen Temperaturen, passiert nichts; gehst du zu weit darüber hinaus, verbrennt das Pflanzenmaterial.",
+      "temp.legend1": "±180 °C — THC verdampft",
+      "temp.legend2": "±210 °C — CBD verdampft",
+      "temp.legend3": ">230 °C — Pflanzenmaterial verbrennt",
+      "temp.callout": "<strong>Über 230 °C</strong> beginnt das Pflanzenmaterial tatsächlich zu verbrennen. Dabei entstehen dieselben Schadstoffe wie beim Rauchen. Ein guter Verdampfer hält die Temperatur deshalb genau unter dieser Grenze.",
+      "eff.h2": "Effizienz: Rauchen vs. Verdampfen",
+      "eff.p": "Beim Rauchen von Cannabis geht der Großteil des Wirkstoffs einfach an die Umgebungsluft und die Verbrennung verloren. Beim Verdampfen ist dieses Verhältnis nahezu umgekehrt.",
+      "eff.card1.title": "🔥 Rauchen",
+      "eff.card2.title": "💨 Verdampfen",
+      "eff.label.inhaled": "Eingeatmet",
+      "eff.label.lost": "Verloren / Luft",
+      "eff.table.aspect": "Aspekt",
+      "eff.table.smoking": "Rauchen",
+      "eff.table.vaping": "Verdampfen",
+      "eff.row1.label": "Kräuterverbrauch",
+      "eff.row1.smoking": "Viel nötig",
+      "eff.row1.vaping": "Deutlich weniger nötig",
+      "eff.row2.label": "Kosten",
+      "eff.row2.smoking": "Auf Dauer höher",
+      "eff.row2.vaping": "Erheblich günstiger",
+      "eff.row3.label": "Geschmack",
+      "eff.row3.smoking": "Verbrannter / rauchiger Geschmack",
+      "eff.row3.vaping": "Voller, reiner Geschmack",
+      "eff.row4.label": "Schadstoffe",
+      "eff.row4.smoking": "Teer, Kohlenmonoxid, krebserregende Stoffe",
+      "eff.row4.vaping": "Nahezu keine",
+      "eff.row5.label": "Geruch",
+      "eff.row5.smoking": "Starker, anhaltender Rauchgeruch",
+      "eff.row5.vaping": "Leichter, schnell verfliegender Geruch",
+      "schema.h2": "So funktioniert ein Verdampfer",
+      "schema.p": "Ein Verdampfer erhitzt Luft (oder das Kraut direkt) auf eine präzise eingestellte Temperatur. Diese warme Luft strömt am Pflanzenmaterial vorbei oder hindurch, wodurch nur die Wirkstoffe verdampfen — ohne dass das Material selbst Feuer fängt.",
+      "schema.caption": "Schema: Heizung → Verdampfung → Wasserfiltration (Bong)",
+      "schema.alt": "Schema von Heizung, Verdampfung und Wasserfiltration (Bong)",
+      "schema.step1.title": "Heizung",
+      "schema.step1.text": "Luft bei Raumtemperatur (~21 °C) wird über eine Heizspirale auf etwa 220 °C erhitzt.",
+      "schema.step2.title": "Kammer mit Material",
+      "schema.step2.text": "Die heiße Luft strömt durch die Kammer mit fein gemahlenem Pflanzenmaterial (THC/CBD), wodurch es verdampft.",
+      "schema.step3.title": "Dampf zur Bong",
+      "schema.step3.text": "Der etwa 220 °C heiße Dampf wird über ein Rohr unter Wasser in die Bong geleitet.",
+      "schema.step4.title": "Wasserfiltration",
+      "schema.step4.text": "Der Dampf sprudelt durchs Wasser: Dies filtert, kühlt und befeuchtet ihn leicht, bevor du ihn einatmest.",
+      "schema.step5.title": "Schlauch / Inhalation",
+      "schema.step5.text": "Über den Schlauch ziehst du den gefilterten Dampf ein.",
+      "schema.step6.title": "Restprodukt",
+      "schema.step6.text": "Das übrig gebliebene Pflanzenmaterial (der „Träger“) ist leicht gebräunt, aber nicht verbrannt.",
+      "benefits.h2": "Warum Verdampfen so viel besser ist",
+      "benefit1.title": "Viel günstiger",
+      "benefit1.text": "Du brauchst deutlich weniger Kraut für den gleichen Effekt.",
+      "benefit2.title": "Schmackhafter",
+      "benefit2.text": "Voller, reiner Geschmack statt verbranntem Rauchgeschmack.",
+      "benefit3.title": "Gesundheitsvorteil",
+      "benefit3.text": "Keine Verbrennungsprodukte wie Teer, Kohlenmonoxid oder krebserregende Stoffe.",
+      "benefit4.title": "Keine Verbrennung",
+      "benefit4.text": "Bleibt unter 230 °C, also gibt es schlicht kein Feuer und keinen Rauch.",
+      "benefit5.title": "Präzise Dosierung",
+      "benefit5.text": "Einstellbare Temperatur = Kontrolle darüber, welche Stoffe freigesetzt werden.",
+      "benefit6.title": "Milder Geruch",
+      "benefit6.text": "Dampf verfliegt schnell und bleibt nicht hängen wie Rauchgeruch.",
+      "benefits.callout": "Kurz gesagt: Verdampfen holt heraus, was du willst (THC und CBD), und lässt zurück, was du nicht brauchst — ohne die schädlichen Nebenprodukte der Verbrennung.",
+      "footer.p1": "🌿 Informative Seite über das Verdampfen von Cannabis (THC/CBD) — erstellt, um Funktionsweise und Vorteile von Vaporizern klar zu erklären.",
+      "footer.disclaimer": "Diese Seite dient ausschließlich Informationszwecken. Die genannten Temperaturen sind Richtwerte; die Nutzung von Cannabisprodukten unterliegt den örtlichen Gesetzen und Vorschriften."
+    },
+    fr: {
+      "meta.title": "Vaporiser plutôt que Fumer 🌿 Tout sur les Vaporisateurs",
+      "header.h1": "🌿 Vaporiser plutôt que Fumer",
+      "header.subtitle": "Découvrez comment un vaporisateur libère les substances actives du cannabis sans combustion — plus savoureux, plus sain et bien plus efficace.",
+      "header.badge1": "🚭 Pas de combustion",
+      "header.badge2": "🌡️ Température précise",
+      "header.badge3": "💚 Aucune substance nocive",
+      "header.badge4": "💰 Beaucoup plus économique",
+      "header.toc1": "🌡️ Températures",
+      "header.toc2": "📊 Efficacité",
+      "header.toc3": "⚙️ Fonctionnement",
+      "header.toc4": "✨ Avantages",
+      "intro.lead": "Quelle est la différence entre fumer et vaporiser ?",
+      "intro.p1": "En <strong>fumant</strong>, vous mettez le feu à la matière végétale : cela se produit à des températures <strong>supérieures à 230 °C</strong>. Cela brûle non seulement la substance active, mais aussi le « support » végétal qui l'entoure — produisant fumée, goudron et substances de combustion.",
+      "intro.p2": "En <strong>vaporisant</strong>, vous chauffez la matière végétale beaucoup plus doucement. Le THC et le CBD passent de l'état solide/liquide à l'état de vapeur à une température relativement basse. Vous n'inhalez ainsi que la <em>substance active</em> — le reste de la matière végétale (l'« emballage ») reste simplement en place, légèrement coloré mais non carbonisé.",
+      "intro.card1.title": "Fumer",
+      "intro.card1.text": "Combustion au-dessus de 230 °C. La matière végétale et la substance active partent ensemble en fumée.",
+      "intro.card2.title": "Vaporiser",
+      "intro.card2.text": "Chauffage entre 180 et 220 °C. Seule la substance active se vaporise, le support reste intact.",
+      "intro.card3.title": "Résidu",
+      "intro.card3.text": "Après vaporisation, il reste des herbes légèrement brunies — pas de cendres, pas de fumée brûlée.",
+      "temp.h2": "À quelle température se passe quoi ?",
+      "temp.p": "Chaque substance active du cannabis a son propre « point d'ébullition » — le point auquel elle se vaporise au lieu de rester solide ou liquide. En dessous de ces températures, il ne se passe rien ; trop au-dessus, la matière végétale se consume.",
+      "temp.legend1": "±180 °C — le THC se vaporise",
+      "temp.legend2": "±210 °C — le CBD se vaporise",
+      "temp.legend3": ">230 °C — la matière végétale se consume",
+      "temp.callout": "<strong>Au-delà de 230 °C</strong>, la matière végétale commence réellement à brûler. Cela produit les mêmes substances de combustion nocives que le tabagisme. Un bon vaporisateur maintient donc la température précisément en dessous de cette limite.",
+      "eff.h2": "Efficacité : fumer vs. vaporiser",
+      "eff.p": "En fumant du cannabis, la majeure partie de la substance active se perd simplement dans l'air ambiant et dans la combustion. En vaporisant, ce rapport est presque inversé.",
+      "eff.card1.title": "🔥 Fumer",
+      "eff.card2.title": "💨 Vaporiser",
+      "eff.label.inhaled": "Inhalé",
+      "eff.label.lost": "Perdu / air",
+      "eff.table.aspect": "Aspect",
+      "eff.table.smoking": "Fumer",
+      "eff.table.vaping": "Vaporiser",
+      "eff.row1.label": "Consommation d'herbe",
+      "eff.row1.smoking": "Beaucoup nécessaire",
+      "eff.row1.vaping": "Beaucoup moins nécessaire",
+      "eff.row2.label": "Coût",
+      "eff.row2.smoking": "Plus élevé à terme",
+      "eff.row2.vaping": "Nettement moins cher",
+      "eff.row3.label": "Goût",
+      "eff.row3.smoking": "Goût brûlé / fumé",
+      "eff.row3.vaping": "Goût plein et pur",
+      "eff.row4.label": "Substances nocives",
+      "eff.row4.smoking": "Goudron, monoxyde de carbone, substances cancérigènes",
+      "eff.row4.vaping": "Pratiquement aucune",
+      "eff.row5.label": "Odeur",
+      "eff.row5.smoking": "Odeur de fumée forte et persistante",
+      "eff.row5.vaping": "Odeur légère qui se dissipe vite",
+      "schema.h2": "Comment fonctionne un vaporisateur",
+      "schema.p": "Un vaporisateur chauffe l'air (ou l'herbe directement) à une température réglée avec précision. Cet air chaud circule autour ou à travers la matière végétale, de sorte que seules les substances actives se vaporisent — sans que la matière elle-même ne prenne feu.",
+      "schema.caption": "Schéma : résistance chauffante → vaporisation → filtration par l'eau (bong)",
+      "schema.alt": "Schéma de la résistance chauffante, de la vaporisation et de la filtration par l'eau (bong)",
+      "schema.step1.title": "Résistance chauffante",
+      "schema.step1.text": "L'air à température ambiante (~21 °C) est chauffé par une résistance jusqu'à environ 220 °C.",
+      "schema.step2.title": "Chambre avec matière",
+      "schema.step2.text": "L'air chaud traverse la chambre contenant la matière végétale finement broyée (THC/CBD), qui se vaporise ainsi.",
+      "schema.step3.title": "Vapeur vers le bong",
+      "schema.step3.text": "La vapeur, à environ 220 °C, est acheminée par un tube sous l'eau jusque dans le bong.",
+      "schema.step4.title": "Filtration par l'eau",
+      "schema.step4.text": "La vapeur barbote dans l'eau : cela la filtre, la refroidit et l'humidifie légèrement avant que vous ne l'inhaliez.",
+      "schema.step5.title": "Tuyau / inhalation",
+      "schema.step5.text": "Vous aspirez la vapeur filtrée par le tuyau.",
+      "schema.step6.title": "Résidu",
+      "schema.step6.text": "La matière végétale restante (le « support ») est légèrement brunie, mais non brûlée.",
+      "benefits.h2": "Pourquoi vaporiser est tellement meilleur",
+      "benefit1.title": "Beaucoup moins cher",
+      "benefit1.text": "Vous avez besoin de beaucoup moins d'herbe pour le même effet.",
+      "benefit2.title": "Plus savoureux",
+      "benefit2.text": "Des saveurs pleines et pures au lieu d'un goût de fumée brûlée.",
+      "benefit3.title": "Bénéfice pour la santé",
+      "benefit3.text": "Aucun produit de combustion tel que goudron, monoxyde de carbone ou substances cancérigènes.",
+      "benefit4.title": "Pas de combustion",
+      "benefit4.text": "Reste sous les 230 °C, donc il n'y a tout simplement ni feu ni fumée.",
+      "benefit5.title": "Dosage précis",
+      "benefit5.text": "Température réglable = contrôle sur les substances libérées.",
+      "benefit6.title": "Odeur légère",
+      "benefit6.text": "La vapeur se dissipe rapidement et ne persiste pas comme l'odeur de fumée.",
+      "benefits.callout": "En bref : la vaporisation extrait ce que vous voulez (THC et CBD), et laisse ce dont vous n'avez pas besoin — sans les sous-produits nocifs de la combustion.",
+      "footer.p1": "🌿 Page informative sur la vaporisation du cannabis (THC/CBD) — créée pour expliquer clairement le fonctionnement et les avantages des vaporisateurs.",
+      "footer.disclaimer": "Cette page est uniquement à titre informatif. Les températures mentionnées sont des valeurs indicatives ; l'usage de produits à base de cannabis est soumis à la législation locale."
+    },
+    es: {
+      "meta.title": "Vaporizar en lugar de Fumar 🌿 Todo sobre los Vaporizadores",
+      "header.h1": "🌿 Vaporizar en lugar de Fumar",
+      "header.subtitle": "Descubre cómo un vaporizador libera los principios activos del cannabis sin combustión — más sabroso, más saludable y mucho más eficiente.",
+      "header.badge1": "🚭 Sin combustión",
+      "header.badge2": "🌡️ Temperatura precisa",
+      "header.badge3": "💚 Sin sustancias nocivas",
+      "header.badge4": "💰 Mucho más económico",
+      "header.toc1": "🌡️ Temperaturas",
+      "header.toc2": "📊 Eficiencia",
+      "header.toc3": "⚙️ Funcionamiento",
+      "header.toc4": "✨ Ventajas",
+      "intro.lead": "¿Cuál es la diferencia entre fumar y vaporizar?",
+      "intro.p1": "Al <strong>fumar</strong>, prendes fuego al material vegetal: esto ocurre a temperaturas <strong>superiores a 230 °C</strong>. Esto quema no solo el principio activo, sino también el «soporte» vegetal que lo rodea — produciendo humo, alquitrán y sustancias de combustión.",
+      "intro.p2": "Al <strong>vaporizar</strong>, calientas el material vegetal de forma mucho más suave. El THC y el CBD pasan de estado sólido/líquido a vapor a una temperatura relativamente baja. Así solo inhalas el <em>principio activo</em> — el resto del material vegetal (el «envoltorio») simplemente queda ahí, algo dorado pero no carbonizado.",
+      "intro.card1.title": "Fumar",
+      "intro.card1.text": "Combustión por encima de 230 °C. El material vegetal y el principio activo se van juntos en humo.",
+      "intro.card2.title": "Vaporizar",
+      "intro.card2.text": "Calentamiento entre 180 y 220 °C. Solo se vaporiza el principio activo, el soporte se mantiene.",
+      "intro.card3.title": "Residuo",
+      "intro.card3.text": "Tras vaporizar quedan hierbas ligeramente doradas — sin cenizas, sin humo quemado.",
+      "temp.h2": "¿A qué temperatura ocurre qué?",
+      "temp.p": "Cada principio activo del cannabis tiene su propio «punto de ebullición» — el punto en el que se vaporiza en lugar de permanecer sólido o líquido. Por debajo de estas temperaturas no ocurre nada; por encima, el material vegetal se quema.",
+      "temp.legend1": "±180 °C — se vaporiza el THC",
+      "temp.legend2": "±210 °C — se vaporiza el CBD",
+      "temp.legend3": ">230 °C — el material vegetal se quema",
+      "temp.callout": "<strong>Por encima de 230 °C</strong> el material vegetal realmente empieza a arder. Esto genera las mismas sustancias nocivas de combustión que fumar. Por eso, un buen vaporizador mantiene la temperatura justo por debajo de este límite.",
+      "eff.h2": "Eficiencia: fumar vs. vaporizar",
+      "eff.p": "Al fumar cannabis, la mayor parte del principio activo simplemente se pierde en el aire y en la combustión. Al vaporizar, esa proporción es casi inversa.",
+      "eff.card1.title": "🔥 Fumar",
+      "eff.card2.title": "💨 Vaporizar",
+      "eff.label.inhaled": "Inhalado",
+      "eff.label.lost": "Perdido / aire",
+      "eff.table.aspect": "Aspecto",
+      "eff.table.smoking": "Fumar",
+      "eff.table.vaping": "Vaporizar",
+      "eff.row1.label": "Consumo de hierba",
+      "eff.row1.smoking": "Se necesita mucha",
+      "eff.row1.vaping": "Se necesita mucha menos",
+      "eff.row2.label": "Coste",
+      "eff.row2.smoking": "Más alto a largo plazo",
+      "eff.row2.vaping": "Considerablemente más barato",
+      "eff.row3.label": "Sabor",
+      "eff.row3.smoking": "Sabor quemado / ahumado",
+      "eff.row3.vaping": "Sabor pleno y puro",
+      "eff.row4.label": "Sustancias nocivas",
+      "eff.row4.smoking": "Alquitrán, monóxido de carbono, sustancias cancerígenas",
+      "eff.row4.vaping": "Prácticamente ninguna",
+      "eff.row5.label": "Olor",
+      "eff.row5.smoking": "Olor a humo fuerte y persistente",
+      "eff.row5.vaping": "Olor ligero que se disipa rápido",
+      "schema.h2": "Cómo funciona un vaporizador",
+      "schema.p": "Un vaporizador calienta el aire (o la hierba directamente) a una temperatura ajustada con precisión. Este aire caliente fluye junto a o a través del material vegetal, de modo que solo se vaporizan los principios activos — sin que el material se incendie.",
+      "schema.caption": "Esquema: resistencia calefactora → vaporización → filtración por agua (bong)",
+      "schema.alt": "Esquema de la resistencia calefactora, la vaporización y la filtración por agua (bong)",
+      "schema.step1.title": "Resistencia calefactora",
+      "schema.step1.text": "El aire a temperatura ambiente (~21 °C) se calienta mediante una resistencia hasta aproximadamente 220 °C.",
+      "schema.step2.title": "Cámara con material",
+      "schema.step2.text": "El aire caliente fluye a través de la cámara con el material vegetal finamente molido (THC/CBD), que así se vaporiza.",
+      "schema.step3.title": "Vapor hacia el bong",
+      "schema.step3.text": "El vapor, a unos 220 °C, se conduce mediante un tubo bajo el agua hasta el bong.",
+      "schema.step4.title": "Filtración por agua",
+      "schema.step4.text": "El vapor burbujea a través del agua: esto lo filtra, enfría y humedece ligeramente antes de que lo inhales.",
+      "schema.step5.title": "Manguera / inhalación",
+      "schema.step5.text": "A través de la manguera aspiras el vapor filtrado.",
+      "schema.step6.title": "Residuo",
+      "schema.step6.text": "El material vegetal restante (el «soporte») queda ligeramente dorado, pero no quemado.",
+      "benefits.h2": "Por qué vaporizar es tan superior",
+      "benefit1.title": "Mucho más barato",
+      "benefit1.text": "Necesitas considerablemente menos hierba para el mismo efecto.",
+      "benefit2.title": "Más sabroso",
+      "benefit2.text": "Sabores plenos y puros en lugar de un sabor a humo quemado.",
+      "benefit3.title": "Beneficio para la salud",
+      "benefit3.text": "Sin productos de combustión como alquitrán, monóxido de carbono o sustancias cancerígenas.",
+      "benefit4.title": "Sin combustión",
+      "benefit4.text": "Se mantiene por debajo de 230 °C, así que simplemente no hay fuego ni humo.",
+      "benefit5.title": "Dosificación precisa",
+      "benefit5.text": "Temperatura ajustable = control sobre qué sustancias se liberan.",
+      "benefit6.title": "Olor suave",
+      "benefit6.text": "El vapor se disipa rápido y no se queda como el olor a humo.",
+      "benefits.callout": "En resumen: vaporizar extrae lo que quieres (THC y CBD), y deja atrás lo que no necesitas — sin los subproductos nocivos de la combustión.",
+      "footer.p1": "🌿 Página informativa sobre la vaporización de cannabis (THC/CBD) — creada para explicar con claridad el funcionamiento y las ventajas de los vaporizadores.",
+      "footer.disclaimer": "Esta página tiene fines exclusivamente informativos. Las temperaturas mencionadas son valores orientativos; el uso de productos de cannabis está sujeto a la legislación local."
+    }
+  };
+
+  var supported = ["nl","en","de","fr","es"];
+  var select = document.getElementById("langSelect");
+
+  function applyLanguage(lang){
+    if(supported.indexOf(lang) === -1) lang = "nl";
+    var dict = translations[lang];
+    document.documentElement.lang = lang;
+    document.title = dict["meta.title"];
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var key = el.getAttribute("data-i18n");
+      if(dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function(el){
+      var key = el.getAttribute("data-i18n-alt");
+      if(dict[key] !== undefined) el.setAttribute("alt", dict[key]);
+    });
+    var schemaImg = document.getElementById("schemaImg");
+    if(schemaImg) schemaImg.src = "schema_verdamper_bong_" + lang + ".svg";
+    select.value = lang;
+    localStorage.setItem("dampinfo-lang", lang);
+  }
+
+  select.addEventListener("change", function(e){ applyLanguage(e.target.value); });
+
+  var saved = localStorage.getItem("dampinfo-lang");
+  var browserLang = (navigator.language || "nl").slice(0,2).toLowerCase();
+  var initialLang = saved && supported.indexOf(saved) !== -1
+    ? saved
+    : (supported.indexOf(browserLang) !== -1 ? browserLang : "nl");
+
+  applyLanguage(initialLang);
+})();
+</script>
 
 </body>
 </html>
