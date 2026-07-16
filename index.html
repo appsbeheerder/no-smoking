@@ -175,10 +175,10 @@
     height:46px;
     border-radius:23px;
     background:linear-gradient(90deg,
-      #4fc3f7 0%, #4fc3f7 53.33%,
-      #7fd99a 53.33%, #7fd99a 73.33%,
-      #ffd54f 73.33%, #ffd54f 86.67%,
-      var(--red) 86.67%, var(--red) 100%);
+      #4fc3f7 0%, #4fc3f7 30%,
+      #7fd99a 30%, #7fd99a 60%,
+      #ffd54f 60%, #ffd54f 80%,
+      var(--red) 80%, var(--red) 100%);
     box-shadow:inset 0 2px 6px rgba(0,0,0,0.15);
   }
   @media (max-width:600px){
@@ -490,12 +490,11 @@
 
     <div class="temp-scale">
       <div class="temp-bar">
-        <div class="temp-marker" style="left:53.33%;">180°C<div class="dot"></div></div>
-        <div class="temp-marker" style="left:73.33%;">210°C<div class="dot"></div></div>
-        <div class="temp-marker" style="left:86.67%;">230°C+<div class="dot"></div></div>
+        <div class="temp-marker" style="left:30%;">180°C<div class="dot"></div></div>
+        <div class="temp-marker" style="left:60%;">210°C<div class="dot"></div></div>
+        <div class="temp-marker" style="left:80%;">230°C+<div class="dot"></div></div>
       </div>
       <div class="temp-labels">
-        <span>100°C</span>
         <span>150°C</span>
         <span>200°C</span>
         <span>250°C</span>
@@ -570,8 +569,8 @@
         </tr>
         <tr>
           <td data-i18n="eff.row4.label">Schadelijke stoffen</td>
-          <td class="no" data-i18n="eff.row4.smoking">Teer, koolmonoxide, kankerverwekkende stoffen</td>
-          <td class="ok" data-i18n="eff.row4.vaping">Vrijwel geen</td>
+          <td class="no" data-i18n="eff.row4.smoking">Teer, koolmonoxide</td>
+          <td class="ok" data-i18n="eff.row4.vaping">Niet aantoonbaar tot nu toe</td>
         </tr>
         <tr>
           <td data-i18n="eff.row5.label">Geur</td>
@@ -657,7 +656,7 @@
       <div class="benefit">
         <span class="emoji">💚</span>
         <h3 data-i18n="benefit3.title">Gezondheidswinst</h3>
-        <p data-i18n="benefit3.text">Geen verbrandingsproducten zoals teer, koolstofmonoxide of kankerverwekkende stoffen.</p>
+        <p data-i18n="benefit3.text">Geen verbrandingsproducten zoals teer of koolstofmonoxide.</p>
       </div>
       <div class="benefit">
         <span class="emoji">🚫🔥</span>
@@ -739,8 +738,8 @@
       "eff.row3.smoking": "Verbrande / rokerige smaak",
       "eff.row3.vaping": "Volle, zuivere smaak",
       "eff.row4.label": "Schadelijke stoffen",
-      "eff.row4.smoking": "Teer, koolmonoxide, kankerverwekkende stoffen",
-      "eff.row4.vaping": "Vrijwel geen",
+      "eff.row4.smoking": "Teer, koolmonoxide",
+      "eff.row4.vaping": "Niet aantoonbaar tot nu toe",
       "eff.row5.label": "Geur",
       "eff.row5.smoking": "Sterke, blijvende rooklucht",
       "eff.row5.vaping": "Lichte, snel vervliegende geur",
@@ -766,7 +765,7 @@
       "benefit2.title": "Lekkerder",
       "benefit2.text": "Volle, zuivere smaken in plaats van een verbrande rooksmaak.",
       "benefit3.title": "Gezondheidswinst",
-      "benefit3.text": "Geen verbrandingsproducten zoals teer, koolstofmonoxide of kankerverwekkende stoffen.",
+      "benefit3.text": "Geen verbrandingsproducten zoals teer of koolstofmonoxide.",
       "benefit4.title": "Geen verbranding",
       "benefit4.text": "Blijft onder de 230 °C, dus er is simpelweg geen vuur en geen rook.",
       "benefit5.title": "Nauwkeurig doseren",
@@ -824,8 +823,8 @@
       "eff.row3.smoking": "Burnt / smoky taste",
       "eff.row3.vaping": "Full, pure taste",
       "eff.row4.label": "Harmful substances",
-      "eff.row4.smoking": "Tar, carbon monoxide, carcinogens",
-      "eff.row4.vaping": "Virtually none",
+      "eff.row4.smoking": "Tar, carbon monoxide",
+      "eff.row4.vaping": "Not detectable so far",
       "eff.row5.label": "Odor",
       "eff.row5.smoking": "Strong, lingering smoke smell",
       "eff.row5.vaping": "Light, quickly dissipating smell",
@@ -851,7 +850,7 @@
       "benefit2.title": "Tastier",
       "benefit2.text": "Full, pure flavors instead of a burnt smoky taste.",
       "benefit3.title": "Health benefits",
-      "benefit3.text": "No combustion products such as tar, carbon monoxide or carcinogens.",
+      "benefit3.text": "No combustion products such as tar or carbon monoxide.",
       "benefit4.title": "No combustion",
       "benefit4.text": "Stays below 230 °C, so there's simply no fire and no smoke.",
       "benefit5.title": "Precise dosing",
@@ -909,8 +908,8 @@
       "eff.row3.smoking": "Verbrannter / rauchiger Geschmack",
       "eff.row3.vaping": "Voller, reiner Geschmack",
       "eff.row4.label": "Schadstoffe",
-      "eff.row4.smoking": "Teer, Kohlenmonoxid, krebserregende Stoffe",
-      "eff.row4.vaping": "Nahezu keine",
+      "eff.row4.smoking": "Teer, Kohlenmonoxid",
+      "eff.row4.vaping": "Bisher nicht nachweisbar",
       "eff.row5.label": "Geruch",
       "eff.row5.smoking": "Starker, anhaltender Rauchgeruch",
       "eff.row5.vaping": "Leichter, schnell verfliegender Geruch",
@@ -936,7 +935,7 @@
       "benefit2.title": "Schmackhafter",
       "benefit2.text": "Voller, reiner Geschmack statt verbranntem Rauchgeschmack.",
       "benefit3.title": "Gesundheitsvorteil",
-      "benefit3.text": "Keine Verbrennungsprodukte wie Teer, Kohlenmonoxid oder krebserregende Stoffe.",
+      "benefit3.text": "Keine Verbrennungsprodukte wie Teer oder Kohlenmonoxid.",
       "benefit4.title": "Keine Verbrennung",
       "benefit4.text": "Bleibt unter 230 °C, also gibt es schlicht kein Feuer und keinen Rauch.",
       "benefit5.title": "Präzise Dosierung",
@@ -994,8 +993,8 @@
       "eff.row3.smoking": "Goût brûlé / fumé",
       "eff.row3.vaping": "Goût plein et pur",
       "eff.row4.label": "Substances nocives",
-      "eff.row4.smoking": "Goudron, monoxyde de carbone, substances cancérigènes",
-      "eff.row4.vaping": "Pratiquement aucune",
+      "eff.row4.smoking": "Goudron, monoxyde de carbone",
+      "eff.row4.vaping": "Non détectable à ce jour",
       "eff.row5.label": "Odeur",
       "eff.row5.smoking": "Odeur de fumée forte et persistante",
       "eff.row5.vaping": "Odeur légère qui se dissipe vite",
@@ -1021,7 +1020,7 @@
       "benefit2.title": "Plus savoureux",
       "benefit2.text": "Des saveurs pleines et pures au lieu d'un goût de fumée brûlée.",
       "benefit3.title": "Bénéfice pour la santé",
-      "benefit3.text": "Aucun produit de combustion tel que goudron, monoxyde de carbone ou substances cancérigènes.",
+      "benefit3.text": "Aucun produit de combustion tel que goudron ou monoxyde de carbone.",
       "benefit4.title": "Pas de combustion",
       "benefit4.text": "Reste sous les 230 °C, donc il n'y a tout simplement ni feu ni fumée.",
       "benefit5.title": "Dosage précis",
@@ -1079,8 +1078,8 @@
       "eff.row3.smoking": "Sabor quemado / ahumado",
       "eff.row3.vaping": "Sabor pleno y puro",
       "eff.row4.label": "Sustancias nocivas",
-      "eff.row4.smoking": "Alquitrán, monóxido de carbono, sustancias cancerígenas",
-      "eff.row4.vaping": "Prácticamente ninguna",
+      "eff.row4.smoking": "Alquitrán, monóxido de carbono",
+      "eff.row4.vaping": "No detectable hasta ahora",
       "eff.row5.label": "Olor",
       "eff.row5.smoking": "Olor a humo fuerte y persistente",
       "eff.row5.vaping": "Olor ligero que se disipa rápido",
@@ -1106,7 +1105,7 @@
       "benefit2.title": "Más sabroso",
       "benefit2.text": "Sabores plenos y puros en lugar de un sabor a humo quemado.",
       "benefit3.title": "Beneficio para la salud",
-      "benefit3.text": "Sin productos de combustión como alquitrán, monóxido de carbono o sustancias cancerígenas.",
+      "benefit3.text": "Sin productos de combustión como alquitrán o monóxido de carbono.",
       "benefit4.title": "Sin combustión",
       "benefit4.text": "Se mantiene por debajo de 230 °C, así que simplemente no hay fuego ni humo.",
       "benefit5.title": "Dosificación precisa",
@@ -1164,8 +1163,8 @@
       "eff.row3.smoking": "Gusto bruciato / affumicato",
       "eff.row3.vaping": "Gusto pieno e puro",
       "eff.row4.label": "Sostanze nocive",
-      "eff.row4.smoking": "Catrame, monossido di carbonio, sostanze cancerogene",
-      "eff.row4.vaping": "Praticamente nessuna",
+      "eff.row4.smoking": "Catrame, monossido di carbonio",
+      "eff.row4.vaping": "Non rilevabile finora",
       "eff.row5.label": "Odore",
       "eff.row5.smoking": "Odore di fumo forte e persistente",
       "eff.row5.vaping": "Odore leggero che si dissolve rapidamente",
@@ -1191,7 +1190,7 @@
       "benefit2.title": "Più gustoso",
       "benefit2.text": "Sapori pieni e puri invece di un gusto di fumo bruciato.",
       "benefit3.title": "Beneficio per la salute",
-      "benefit3.text": "Nessun prodotto di combustione come catrame, monossido di carbonio o sostanze cancerogene.",
+      "benefit3.text": "Nessun prodotto di combustione come catrame o monossido di carbonio.",
       "benefit4.title": "Nessuna combustione",
       "benefit4.text": "Resta sotto i 230 °C, quindi semplicemente non c'è fuoco né fumo.",
       "benefit5.title": "Dosaggio preciso",
@@ -1249,8 +1248,8 @@
       "eff.row3.smoking": "Spalony / dymny smak",
       "eff.row3.vaping": "Pełny, czysty smak",
       "eff.row4.label": "Szkodliwe substancje",
-      "eff.row4.smoking": "Smoła, tlenek węgla, substancje rakotwórcze",
-      "eff.row4.vaping": "Praktycznie żadne",
+      "eff.row4.smoking": "Smoła, tlenek węgla",
+      "eff.row4.vaping": "Jak dotąd niewykrywalne",
       "eff.row5.label": "Zapach",
       "eff.row5.smoking": "Silny, utrzymujący się zapach dymu",
       "eff.row5.vaping": "Lekki, szybko ulatniający się zapach",
@@ -1276,7 +1275,7 @@
       "benefit2.title": "Smaczniejsze",
       "benefit2.text": "Pełne, czyste smaki zamiast spalonego, dymnego smaku.",
       "benefit3.title": "Korzyść zdrowotna",
-      "benefit3.text": "Brak produktów spalania, takich jak smoła, tlenek węgla czy substancje rakotwórcze.",
+      "benefit3.text": "Brak produktów spalania, takich jak smoła czy tlenek węgla.",
       "benefit4.title": "Brak spalania",
       "benefit4.text": "Pozostaje poniżej 230 °C, więc po prostu nie ma ognia ani dymu.",
       "benefit5.title": "Precyzyjne dawkowanie",
@@ -1334,8 +1333,8 @@
       "eff.row3.smoking": "Sabor queimado / fumado",
       "eff.row3.vaping": "Sabor pleno e puro",
       "eff.row4.label": "Substâncias nocivas",
-      "eff.row4.smoking": "Alcatrão, monóxido de carbono, substâncias cancerígenas",
-      "eff.row4.vaping": "Praticamente nenhuma",
+      "eff.row4.smoking": "Alcatrão, monóxido de carbono",
+      "eff.row4.vaping": "Não detectável até agora",
       "eff.row5.label": "Odor",
       "eff.row5.smoking": "Odor a fumo forte e persistente",
       "eff.row5.vaping": "Odor ligeiro que se dissipa rapidamente",
@@ -1361,7 +1360,7 @@
       "benefit2.title": "Mais saboroso",
       "benefit2.text": "Sabores plenos e puros em vez de um sabor a fumo queimado.",
       "benefit3.title": "Benefício para a saúde",
-      "benefit3.text": "Sem produtos de combustão como alcatrão, monóxido de carbono ou substâncias cancerígenas.",
+      "benefit3.text": "Sem produtos de combustão como alcatrão ou monóxido de carbono.",
       "benefit4.title": "Sem combustão",
       "benefit4.text": "Mantém-se abaixo dos 230 °C, por isso simplesmente não há fogo nem fumo.",
       "benefit5.title": "Dosagem precisa",

@@ -29,7 +29,7 @@ dan http://localhost:8000/index.html openen.
 - THC verdampt rond 180°C, CBD rond 210°C.
 - Boven 230°C verbrandt het plantmateriaal (niet meer alleen verdampen).
 - Roken: ~20% werkzame stof ingeademd, 80% verloren. Verdampen: omgekeerd (~80% ingeademd).
-- Temperatuurbalk in `index.html` (`.temp-bar` gradient + `.temp-marker` posities) is geschaald op een as van 100–250°C (`.temp-scale` heeft `max-width:560px` en extra padding onder 600px om overloop op kleine schermen te voorkomen); wijzig je de grenswaarden, pas dan zowel de gradient-stops als de marker `left:%`-waarden én de `.temp-labels` samen aan — ze moeten met elkaar kloppen.
+- Temperatuurbalk in `index.html` (`.temp-bar` gradient + `.temp-marker` posities) is geschaald op een as van 150–250°C, met 3 `.temp-labels` (150/200/250°C) voor voldoende ruimte tussen de getallen op kleine schermen (`.temp-scale` heeft `max-width:560px` en extra padding onder 600px om overloop te voorkomen); wijzig je de grenswaarden, pas dan zowel de gradient-stops als de marker `left:%`-waarden én de `.temp-labels` samen aan — ze moeten met elkaar kloppen.
 
 ## Publiceren
 

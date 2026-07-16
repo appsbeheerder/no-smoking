@@ -86,7 +86,7 @@
   <path d="M 358 990 L 340 1050 L 560 1050 L 542 990 Z" fill="#4fc3f7" stroke="none"/>
 
   <!-- inner dip tube -->
-  <rect x="412" y="590" width="76" height="440" rx="4" fill="#ffffff" stroke="#1a5fb4" stroke-width="2"/>
+  <rect x="417.7" y="590" width="64.6" height="440" rx="4" fill="#ffffff" stroke="#1a5fb4" stroke-width="2"/>
   <text x="560" y="700" font-size="14" fill="#0b3d78">rurka w wodzie</text>
   <line x1="558" y1="695" x2="488" y2="660" stroke="#0b3d78" stroke-width="1"/>
 
