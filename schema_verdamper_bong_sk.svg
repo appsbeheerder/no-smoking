@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1215" viewBox="0 0 900 1215" font-family="Arial, sans-serif">
+  <rect width="900" height="1215" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a1a1a">Schéma: Ohrievač → Odparovanie → Vodná filtrácia (bong)</text>
+
+  <!-- ===================== BLOCK 1: HEATER ===================== -->
+  <rect x="60" y="140" width="230" height="60" rx="10" fill="#fde8d8" stroke="#c96a1a" stroke-width="2.5"/>
+  <text x="175" y="170" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#8a4b12">OHRIEVAČ</text>
+
+  <!-- Air in arrow -->
+  <line x1="450" y1="80" x2="450" y2="140" stroke="#1a5fb4" stroke-width="3" marker-end="url(#arrowblue)"/>
+  <text x="470" y="115" font-size="15" fill="#1a5fb4">vzduch 21°C (vstup)</text>
+
+  <!-- Heater tube -->
+  <rect x="400" y="140" width="100" height="230" rx="10" fill="#fff3e6" stroke="#333" stroke-width="2"/>
+  <!-- coil zigzag -->
+  <path d="M 415 155 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30 q 15 15 0 30"
+        fill="none" stroke="#c96a1a" stroke-width="4"/>
+  <path d="M 485 155 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30 q -15 15 0 30"
+        fill="none" stroke="#c96a1a" stroke-width="4"/>
+  <text x="620" y="260" font-size="15" fill="#8a4b12">špirálový ohrievač</text>
+  <text x="620" y="285" font-size="15" fill="#8a4b12">napájaný 230 V</text>
+  <line x1="600" y1="260" x2="480" y2="230" stroke="#8a4b12" stroke-width="1.5"/>
+
+  <!-- 230V symbol -->
+  <line x1="600" y1="300" x2="600" y2="340" stroke="#333" stroke-width="2"/>
+  <line x1="580" y1="340" x2="620" y2="340" stroke="#333" stroke-width="3"/>
+  <line x1="587" y1="348" x2="613" y2="348" stroke="#333" stroke-width="2"/>
+  <line x1="593" y1="355" x2="607" y2="355" stroke="#333" stroke-width="1.5"/>
+  <text x="630" y="345" font-size="14" fill="#333">uzemnenie / 230V napájanie</text>
+
+  <!-- Air out arrow -->
+  <line x1="450" y1="370" x2="450" y2="430" stroke="#c1272d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="410" font-size="15" fill="#c1272d">zohriaty vzduch 220°C</text>
+
+  <!-- ===================== BLOCK 2: KOPJE MET MATERIAAL ===================== -->
+  <rect x="60" y="450" width="230" height="60" rx="10" fill="#e3f3e0" stroke="#2e7d32" stroke-width="2.5"/>
+  <text x="175" y="480" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#1b5e20">MISKA S MATERIÁLOM</text>
+
+  <!-- cup -->
+  <path d="M 405 440 L 495 440 L 480 520 L 420 520 Z" fill="#f4fff2" stroke="#2e7d32" stroke-width="2.5"/>
+
+  <!-- groene kruiden bovenop het zeefje -->
+  <g stroke="#2e5a20" stroke-width="0.5">
+    <ellipse cx="422" cy="465" rx="8" ry="4" fill="#5a8c3f" transform="rotate(-15 422 465)"/>
+    <ellipse cx="440" cy="461" rx="7" ry="4" fill="#4a7c3a" transform="rotate(20 440 461)"/>
+    <ellipse cx="458" cy="464" rx="8" ry="4" fill="#6b9c4a" transform="rotate(-10 458 464)"/>
+    <ellipse cx="474" cy="469" rx="7" ry="4" fill="#3d6b2e" transform="rotate(25 474 469)"/>
+    <ellipse cx="420" cy="474" rx="7" ry="4" fill="#4a7c3a" transform="rotate(10 420 474)"/>
+    <ellipse cx="435" cy="477" rx="8" ry="4" fill="#6b9c4a" transform="rotate(-25 435 477)"/>
+    <ellipse cx="450" cy="475" rx="7" ry="4" fill="#5a8c3f" transform="rotate(15 450 475)"/>
+    <ellipse cx="465" cy="478" rx="7" ry="4" fill="#3d6b2e" transform="rotate(-20 465 478)"/>
+    <ellipse cx="479" cy="474" rx="6" ry="3.5" fill="#4a7c3a" transform="rotate(30 479 474)"/>
+  </g>
+
+  <!-- zeefje -->
+  <line x1="410" y1="485" x2="490" y2="485" stroke="#666666" stroke-width="2.5"/>
+  <g fill="#666666">
+    <circle cx="417" cy="485" r="1.3"/>
+    <circle cx="428" cy="485" r="1.3"/>
+    <circle cx="439" cy="485" r="1.3"/>
+    <circle cx="450" cy="485" r="1.3"/>
+    <circle cx="461" cy="485" r="1.3"/>
+    <circle cx="472" cy="485" r="1.3"/>
+    <circle cx="483" cy="485" r="1.3"/>
+  </g>
+
+  <text x="500" y="470" font-size="14" fill="#2e7d32">materiál na odparenie</text>
+  <line x1="498" y1="465" x2="480" y2="467" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="500" y="493" font-size="13" fill="#444444">sitko</text>
+  <line x1="498" y1="489" x2="488" y2="485" stroke="#444444" stroke-width="1.5"/>
+
+  <!-- vapor out arrow -->
+  <line x1="450" y1="520" x2="450" y2="580" stroke="#c1272d" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="470" y="560" font-size="15" fill="#c1272d">para 220°C</text>
+
+  <!-- ===================== BLOCK 3: BONG / WATERFILTER ===================== -->
+  <rect x="60" y="610" width="230" height="60" rx="10" fill="#e0eefd" stroke="#1a5fb4" stroke-width="2.5"/>
+  <text x="175" y="640" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#0b3d78">BONG</text>
+
+  <!-- Erlenmeyer flask -->
+  <path d="M 400 600 L 400 850 L 340 1050 L 560 1050 L 500 850 L 500 600 Z"
+        fill="#eaf4ff" stroke="#1a5fb4" stroke-width="2.5"/>
+  <!-- water level: 70% lager -->
+  <path d="M 358 990 L 340 1050 L 560 1050 L 542 990 Z" fill="#4fc3f7" stroke="none"/>
+
+  <!-- inner dip tube -->
+  <rect x="417.7" y="590" width="64.6" height="440" rx="4" fill="#ffffff" stroke="#1a5fb4" stroke-width="2.5"/>
+  <text x="560" y="700" font-size="14" fill="#0b3d78">rúrka vo vode</text>
+  <line x1="558" y1="695" x2="488" y2="660" stroke="#0b3d78" stroke-width="1.5"/>
+
+  <!-- side arm to hose -->
+  <path d="M 515 890 L 615 860" stroke="#1a5fb4" stroke-width="25" fill="none" stroke-linecap="round"/>
+  <line x1="615" y1="860" x2="715" y2="830" stroke="#1a5fb4" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="665" y="865" font-size="15" fill="#1a5fb4">hadica → inhalácia</text>
+
+  <!-- dampwolkje aan het einde van het zuiggedeelte -->
+  <g opacity="0.9">
+    <circle cx="737" cy="808" r="12" fill="#f5fafd" stroke="#b8d8ea" stroke-width="1"/>
+    <circle cx="752" cy="802" r="9" fill="#f5fafd" stroke="#b8d8ea" stroke-width="1"/>
+    <circle cx="723" cy="802" r="9" fill="#f5fafd" stroke="#b8d8ea" stroke-width="1"/>
+    <circle cx="737" cy="792" r="9" fill="#f5fafd" stroke="#b8d8ea" stroke-width="1"/>
+  </g>
+
+  <text x="655" y="748" font-size="14" fill="#0b3d78">para: filtrovaná,</text>
+  <text x="655" y="766" font-size="14" fill="#0b3d78">schladená, mierne zvlhčená</text>
+
+  <!-- doorlopende stippellijn van luchtinlaat tot zuiguitgang -->
+  <path d="M 450 82 L 450 1010 L 450 1025 Q 420 1042 390 1025 Q 365 1010 380 965 Q 395 925 440 900 L 515 890 L 615 860 L 715 830 L 733 805"
+        fill="none" stroke="#1a5fb4" stroke-width="3" stroke-linecap="round" stroke-dasharray="1.5,6" opacity="1" marker-end="url(#arrowblue)"/>
+
+  <!-- water fill arrow -->
+  <line x1="230" y1="1030" x2="330" y2="1010" stroke="#1a5fb4" stroke-width="3" marker-end="url(#arrowblue)"/>
+  <text x="130" y="1050" font-size="15" fill="#1a5fb4">voda</text>
+
+  <!-- Arrow marker defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6" fill="none" stroke="#c1272d" stroke-width="1.5"/>
+    </marker>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6" fill="none" stroke="#1a5fb4" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <!-- Footer legend -->
+  <rect x="60" y="1090" width="780" height="105" rx="8" fill="#eef2f7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="80" y="1113" font-size="14" fill="#1a1a1a" font-weight="bold">Princíp fungovania:</text>
+  <text x="80" y="1131" font-size="13" fill="#1a1a1a">1) Vzduch s teplotou 21°C sa zohrieva pomocou špirálového ohrievača (230V) na cca 220°C.</text>
+  <text x="80" y="1149" font-size="13" fill="#1a1a1a">2) Horúci vzduch prúdi cez misku s materiálom, ktorý sa tým odparí (para 220°C).</text>
+  <text x="80" y="1167" font-size="13" fill="#1a1a1a">3) Para je vedená rúrkou pod vodou do bongu: filtrovaná, schladená a mierne zvlhčená, následne je</text>
+  <text x="80" y="1185" font-size="13" fill="#1a1a1a">vdychovaná cez hadicu.</text>
+</svg>

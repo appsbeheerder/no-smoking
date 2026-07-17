@@ -1,2 +1,8 @@
 uitleg.md
 resume-sessie.cmd
+
+# sync_translations.py
+deepl_api_key.txt
+.sync_state/
+backups/
+__pycache__/
