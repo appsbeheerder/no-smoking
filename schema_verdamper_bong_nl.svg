@@ -5,7 +5,7 @@
   <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a1a1a">Schema: Heater → Verdamping → Waterfiltratie (bong)</text>
 
   <!-- ===================== BLOCK 1: HEATER ===================== -->
-  <rect x="60" y="140" width="230" height="60" rx="10" fill="#fde8d8" stroke="#c96a1a" stroke-width="2"/>
+  <rect x="60" y="140" width="230" height="60" rx="10" fill="#fde8d8" stroke="#c96a1a" stroke-width="2.5"/>
   <text x="175" y="170" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#8a4b12">HEATER</text>
 
   <!-- Air in arrow -->
@@ -35,11 +35,11 @@
   <text x="470" y="410" font-size="15" fill="#c1272d">verwarmde lucht 220°C</text>
 
   <!-- ===================== BLOCK 2: KOPJE MET MATERIAAL ===================== -->
-  <rect x="60" y="450" width="230" height="60" rx="10" fill="#e3f3e0" stroke="#2e7d32" stroke-width="2"/>
+  <rect x="60" y="450" width="230" height="60" rx="10" fill="#e3f3e0" stroke="#2e7d32" stroke-width="2.5"/>
   <text x="175" y="480" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#1b5e20">KOPJE MET MATERIAAL</text>
 
   <!-- cup -->
-  <path d="M 405 440 L 495 440 L 480 520 L 420 520 Z" fill="#f4fff2" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M 405 440 L 495 440 L 480 520 L 420 520 Z" fill="#f4fff2" stroke="#2e7d32" stroke-width="2.5"/>
 
   <!-- groene kruiden bovenop het zeefje -->
   <g stroke="#2e5a20" stroke-width="0.5">
@@ -55,8 +55,8 @@
   </g>
 
   <!-- zeefje -->
-  <line x1="410" y1="485" x2="490" y2="485" stroke="#8a8a8a" stroke-width="2"/>
-  <g fill="#8a8a8a">
+  <line x1="410" y1="485" x2="490" y2="485" stroke="#666666" stroke-width="2.5"/>
+  <g fill="#666666">
     <circle cx="417" cy="485" r="1.3"/>
     <circle cx="428" cy="485" r="1.3"/>
     <circle cx="439" cy="485" r="1.3"/>
@@ -67,28 +67,28 @@
   </g>
 
   <text x="500" y="470" font-size="14" fill="#2e7d32">te verdampen materiaal</text>
-  <line x1="498" y1="465" x2="480" y2="467" stroke="#2e7d32" stroke-width="1"/>
-  <text x="500" y="493" font-size="13" fill="#5a5a5a">zeefje</text>
-  <line x1="498" y1="489" x2="488" y2="485" stroke="#5a5a5a" stroke-width="1"/>
+  <line x1="498" y1="465" x2="480" y2="467" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="500" y="493" font-size="13" fill="#444444">zeefje</text>
+  <line x1="498" y1="489" x2="488" y2="485" stroke="#444444" stroke-width="1.5"/>
 
   <!-- vapor out arrow -->
   <line x1="450" y1="520" x2="450" y2="580" stroke="#c1272d" stroke-width="3" marker-end="url(#arrow)"/>
   <text x="470" y="560" font-size="15" fill="#c1272d">damp 220°C</text>
 
   <!-- ===================== BLOCK 3: BONG / WATERFILTER ===================== -->
-  <rect x="60" y="610" width="230" height="60" rx="10" fill="#e0eefd" stroke="#1a5fb4" stroke-width="2"/>
+  <rect x="60" y="610" width="230" height="60" rx="10" fill="#e0eefd" stroke="#1a5fb4" stroke-width="2.5"/>
   <text x="175" y="640" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="bold" fill="#0b3d78">BONG</text>
 
   <!-- Erlenmeyer flask -->
   <path d="M 400 600 L 400 850 L 340 1050 L 560 1050 L 500 850 L 500 600 Z"
-        fill="#eaf4ff" stroke="#1a5fb4" stroke-width="2"/>
+        fill="#eaf4ff" stroke="#1a5fb4" stroke-width="2.5"/>
   <!-- water level: 70% lager -->
   <path d="M 358 990 L 340 1050 L 560 1050 L 542 990 Z" fill="#4fc3f7" stroke="none"/>
 
   <!-- inner dip tube -->
-  <rect x="417.7" y="590" width="64.6" height="440" rx="4" fill="#ffffff" stroke="#1a5fb4" stroke-width="2"/>
+  <rect x="417.7" y="590" width="64.6" height="440" rx="4" fill="#ffffff" stroke="#1a5fb4" stroke-width="2.5"/>
   <text x="560" y="700" font-size="14" fill="#0b3d78">buis in water</text>
-  <line x1="558" y1="695" x2="488" y2="660" stroke="#0b3d78" stroke-width="1"/>
+  <line x1="558" y1="695" x2="488" y2="660" stroke="#0b3d78" stroke-width="1.5"/>
 
   <!-- side arm to hose -->
   <path d="M 515 890 L 615 860" stroke="#1a5fb4" stroke-width="25" fill="none" stroke-linecap="round"/>
@@ -108,7 +108,7 @@
 
   <!-- doorlopende stippellijn van luchtinlaat tot zuiguitgang -->
   <path d="M 450 82 L 450 1010 L 450 1025 Q 420 1042 390 1025 Q 365 1010 380 965 Q 395 925 440 900 L 515 890 L 615 860 L 715 830 L 733 805"
-        fill="none" stroke="#1a5fb4" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1,7" opacity="0.85" marker-end="url(#arrowblue)"/>
+        fill="none" stroke="#1a5fb4" stroke-width="3" stroke-linecap="round" stroke-dasharray="1.5,6" opacity="1" marker-end="url(#arrowblue)"/>
 
   <!-- water fill arrow -->
   <line x1="230" y1="1030" x2="330" y2="1010" stroke="#1a5fb4" stroke-width="3" marker-end="url(#arrowblue)"/>
@@ -125,10 +125,10 @@
   </defs>
 
   <!-- Footer legend -->
-  <rect x="60" y="1090" width="780" height="105" rx="8" fill="#f5f5f5" stroke="#999" stroke-width="1"/>
-  <text x="80" y="1113" font-size="14" fill="#333" font-weight="bold">Werkingsprincipe:</text>
-  <text x="80" y="1131" font-size="13" fill="#333">1) Lucht van 21°C wordt via de verwarmingsspiraal (230V) verhit tot ca. 220°C.</text>
-  <text x="80" y="1149" font-size="13" fill="#333">2) De hete lucht stroomt door het kopje met materiaal, dat hierdoor verdampt (damp 220°C).</text>
-  <text x="80" y="1167" font-size="13" fill="#333">3) De damp wordt via een buis onder water in de bong geleid: gefilterd, afgekoeld en licht bevochtigd, waarna deze via</text>
-  <text x="80" y="1185" font-size="13" fill="#333">een slang wordt afgezogen.</text>
+  <rect x="60" y="1090" width="780" height="105" rx="8" fill="#eef2f7" stroke="#4a4a4a" stroke-width="2"/>
+  <text x="80" y="1113" font-size="14" fill="#1a1a1a" font-weight="bold">Werkingsprincipe:</text>
+  <text x="80" y="1131" font-size="13" fill="#1a1a1a">1) Lucht van 21°C wordt via de verwarmingsspiraal (230V) verhit tot ca. 220°C.</text>
+  <text x="80" y="1149" font-size="13" fill="#1a1a1a">2) De hete lucht stroomt door het kopje met materiaal, dat hierdoor verdampt (damp 220°C).</text>
+  <text x="80" y="1167" font-size="13" fill="#1a1a1a">3) De damp wordt via een buis onder water in de bong geleid: gefilterd, afgekoeld en licht bevochtigd, waarna deze via</text>
+  <text x="80" y="1185" font-size="13" fill="#1a1a1a">een slang wordt afgezogen.</text>
 </svg>
